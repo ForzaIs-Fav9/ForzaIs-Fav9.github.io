@@ -15,3 +15,5 @@ This project focuses on:
 Technologies:
 - Python
 - Scientific computing libraries
+
+[View on GitHub](https://github.com/ForzaIs-Fav9/computational-physics-lab)
