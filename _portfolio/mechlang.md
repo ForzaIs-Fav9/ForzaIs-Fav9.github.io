@@ -15,3 +15,5 @@ Focus:
 - Formal representation of chemical transformations
 - Computational reasoning over reaction logic
 - Language design for domain-specific modeling
+
+[View on GitHub](https://github.com/Forzals-Fav/mechlang)
