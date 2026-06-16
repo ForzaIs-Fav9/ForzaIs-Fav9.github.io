@@ -1,0 +1,38 @@
+{
+  "milestones": [
+    {
+      "id": "ms-1",
+      "date": "TODO",
+      "title": "TODO: Milestone Title",
+      "description": "TODO: What happened or was achieved.",
+      "category": "project"
+    },
+    {
+      "id": "ms-2",
+      "date": "TODO",
+      "title": "TODO: Milestone Title",
+      "description": "TODO: What happened or was achieved.",
+      "category": "education"
+    }
+  ],
+  "futureMilestones": [
+    {
+      "id": "future-1",
+      "title": "Publish first research paper",
+      "description": "Contributing original work to the scientific community.",
+      "category": "aspiration"
+    },
+    {
+      "id": "future-2",
+      "title": "Launch a deep-tech startup",
+      "description": "Turning research into a venture that solves real problems.",
+      "category": "aspiration"
+    },
+    {
+      "id": "future-3",
+      "title": "Open-source a tool used by thousands",
+      "description": "Building something the community genuinely relies on.",
+      "category": "aspiration"
+    }
+  ]
+}

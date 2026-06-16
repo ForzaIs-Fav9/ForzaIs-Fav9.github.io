@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "id": "proj-1",
+      "title": "TODO: Project Name",
+      "description": "TODO: One-line description",
+      "longDescription": "TODO: Detailed description of the project, what it does, and why you built it.",
+      "technologies": ["TODO"],
+      "category": "ai",
+      "status": "in-progress",
+      "links": {
+        "github": "https://github.com/ForzaIs-Fav9/TODO"
+      },
+      "featured": true,
+      "image": "/images/projects/placeholder.png",
+      "date": "TODO"
+    },
+    {
+      "id": "proj-2",
+      "title": "TODO: Project Name",
+      "description": "TODO: One-line description",
+      "longDescription": "TODO: Detailed description of the project, what it does, and why you built it.",
+      "technologies": ["TODO"],
+      "category": "physics",
+      "status": "in-progress",
+      "links": {
+        "github": "https://github.com/ForzaIs-Fav9/TODO"
+      },
+      "featured": true,
+      "image": "/images/projects/placeholder.png",
+      "date": "TODO"
+    },
+    {
+      "id": "proj-3",
+      "title": "TODO: Project Name",
+      "description": "TODO: One-line description",
+      "longDescription": "TODO: Detailed description of the project, what it does, and why you built it.",
+      "technologies": ["TODO"],
+      "category": "startup",
+      "status": "in-progress",
+      "links": {
+        "github": "https://github.com/ForzaIs-Fav9/TODO"
+      },
+      "featured": false,
+      "image": "/images/projects/placeholder.png",
+      "date": "TODO"
+    }
+  ]
+}

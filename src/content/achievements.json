@@ -1,0 +1,31 @@
+{
+  "achievements": [
+    {
+      "id": "ach-1",
+      "title": "TODO: Achievement Title",
+      "organization": "TODO: Organization",
+      "date": "TODO",
+      "category": "academic",
+      "description": "TODO: Brief description of the achievement.",
+      "link": null
+    },
+    {
+      "id": "ach-2",
+      "title": "TODO: Achievement Title",
+      "organization": "TODO: Organization",
+      "date": "TODO",
+      "category": "research",
+      "description": "TODO: Brief description of the achievement.",
+      "link": null
+    },
+    {
+      "id": "ach-3",
+      "title": "TODO: Achievement Title",
+      "organization": "TODO: Organization",
+      "date": "TODO",
+      "category": "competition",
+      "description": "TODO: Brief description of the achievement.",
+      "link": null
+    }
+  ]
+}

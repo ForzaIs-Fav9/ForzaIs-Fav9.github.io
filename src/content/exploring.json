@@ -1,0 +1,25 @@
+{
+  "currentInterests": [
+    {
+      "id": "exp-1",
+      "topic": "TODO: Topic Name",
+      "description": "TODO: What you're learning and why.",
+      "resources": [
+        { "title": "TODO: Resource Name", "url": "https://TODO", "type": "book" }
+      ],
+      "startedDate": "2025-01",
+      "status": "active"
+    },
+    {
+      "id": "exp-2",
+      "topic": "TODO: Topic Name",
+      "description": "TODO: What you're learning and why.",
+      "resources": [
+        { "title": "TODO: Resource Name", "url": "https://TODO", "type": "course" }
+      ],
+      "startedDate": "2025-03",
+      "status": "active"
+    }
+  ],
+  "lastUpdated": "2025-06-15"
+}

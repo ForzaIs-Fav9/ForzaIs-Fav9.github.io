@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-background text-text-primary antialiased;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply min-h-screen;
+  }
+
+  ::selection {
+    @apply bg-accent/20 text-text-primary;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent;
+  }
+}
+
+@layer components {
+  .prose-custom {
+    @apply text-body text-text-secondary leading-relaxed;
+  }
+
+  .prose-custom p + p {
+    @apply mt-4;
+  }
+
+  .glass {
+    @apply bg-surface/80 backdrop-blur-md border border-border;
+  }
+}

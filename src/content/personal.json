@@ -1,0 +1,51 @@
+{
+  "name": "Harshith Vankela",
+  "tagline": "Building at the intersection of AI, quantum systems, and entrepreneurship.",
+  "shortBio": "Student, researcher, and builder. I study how computation and physics converge — and how ideas become ventures.",
+  "fullBio": [
+    "I'm driven by a simple premise: the most interesting problems live between disciplines. My work spans artificial intelligence, quantum computing, and the psychology of human decision-making — not because these fields are trendy, but because their intersections reveal how reality actually works.",
+    "I build things to understand them. Whether it's a quantum circuit simulator, an ML system, or a startup prototype, each project is a lens into a different layer of complexity. I write to think clearly, and I share because ideas compound when they're in the open.",
+    "Outside of research, I train calisthenics — the discipline of mastering your own body mirrors the discipline of mastering complex systems. I believe in compounding curiosity, long-term thinking, and the quiet work that precedes any visible result."
+  ],
+  "philosophy": "The most meaningful insights emerge at the intersections of disciplines. Physics informs computation, psychology informs design, and entrepreneurship turns ideas into impact. I'm not interested in credentials — I'm interested in understanding.",
+  "interests": [
+    {
+      "label": "Quantum Physics",
+      "icon": "atom",
+      "description": "Quantum computing, information theory, and the foundations of reality."
+    },
+    {
+      "label": "Artificial Intelligence",
+      "icon": "brain",
+      "description": "Building intelligent systems and understanding the nature of cognition."
+    },
+    {
+      "label": "Entrepreneurship",
+      "icon": "rocket",
+      "description": "Turning research and ideas into ventures that create real-world impact."
+    },
+    {
+      "label": "Psychology",
+      "icon": "mind",
+      "description": "Understanding human behavior, decision-making, and cognitive science."
+    },
+    {
+      "label": "Space",
+      "icon": "galaxy",
+      "description": "The cosmos, orbital mechanics, and humanity's future among the stars."
+    },
+    {
+      "label": "Calisthenics",
+      "icon": "fitness",
+      "description": "Mastering bodyweight movement — discipline of body as discipline of mind."
+    }
+  ],
+  "socials": {
+    "email": "TODO@example.com",
+    "github": "https://github.com/ForzaIs-Fav9",
+    "substack": "https://TODO.substack.com",
+    "linkedin": "https://linkedin.com/in/TODO",
+    "twitter": "https://twitter.com/TODO"
+  },
+  "profileImage": "/images/profile.jpg"
+}

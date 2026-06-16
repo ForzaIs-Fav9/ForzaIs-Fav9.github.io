@@ -1,0 +1,52 @@
+{
+  "favorites": [
+    {
+      "id": "book-1",
+      "title": "TODO: Book Title",
+      "author": "TODO: Author Name",
+      "category": "physics",
+      "note": "TODO: One line on why this book matters to you.",
+      "link": "https://TODO"
+    },
+    {
+      "id": "book-2",
+      "title": "TODO: Book Title",
+      "author": "TODO: Author Name",
+      "category": "ai",
+      "note": "TODO: One line on why this book matters to you.",
+      "link": "https://TODO"
+    },
+    {
+      "id": "book-3",
+      "title": "TODO: Book Title",
+      "author": "TODO: Author Name",
+      "category": "psychology",
+      "note": "TODO: One line on why this book matters to you.",
+      "link": "https://TODO"
+    },
+    {
+      "id": "book-4",
+      "title": "TODO: Book Title",
+      "author": "TODO: Author Name",
+      "category": "business",
+      "note": "TODO: One line on why this book matters to you.",
+      "link": "https://TODO"
+    },
+    {
+      "id": "book-5",
+      "title": "TODO: Book Title",
+      "author": "TODO: Author Name",
+      "category": "philosophy",
+      "note": "TODO: One line on why this book matters to you.",
+      "link": "https://TODO"
+    }
+  ],
+  "currentlyReading": [
+    {
+      "id": "reading-1",
+      "title": "TODO: Book Title",
+      "author": "TODO: Author Name",
+      "progress": 40
+    }
+  ]
+}

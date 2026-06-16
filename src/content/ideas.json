@@ -1,0 +1,25 @@
+{
+  "ideas": [
+    {
+      "id": "idea-1",
+      "title": "TODO: Idea Title",
+      "summary": "TODO: A concise articulation of the idea — what it is and why it matters.",
+      "tags": ["TODO"],
+      "date": "2025-01"
+    },
+    {
+      "id": "idea-2",
+      "title": "TODO: Idea Title",
+      "summary": "TODO: A concise articulation of the idea — what it is and why it matters.",
+      "tags": ["TODO"],
+      "date": "2025-02"
+    },
+    {
+      "id": "idea-3",
+      "title": "TODO: Idea Title",
+      "summary": "TODO: A concise articulation of the idea — what it is and why it matters.",
+      "tags": ["TODO"],
+      "date": "2025-03"
+    }
+  ]
+}

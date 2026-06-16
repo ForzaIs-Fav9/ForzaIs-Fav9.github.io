@@ -1,0 +1,55 @@
+{
+  "intro": "This is where half-formed ideas live. Experiments, research notes, speculative projects, and questions I haven't answered yet.",
+  "sections": [
+    {
+      "title": "Experiments",
+      "items": [
+        {
+          "title": "TODO: Experiment Name",
+          "description": "TODO: What you're testing or exploring.",
+          "status": "exploring"
+        }
+      ]
+    },
+    {
+      "title": "Future Ideas",
+      "items": [
+        {
+          "title": "TODO: Idea Name",
+          "description": "TODO: What this could become.",
+          "status": "idea"
+        }
+      ]
+    },
+    {
+      "title": "Research Notes",
+      "items": [
+        {
+          "title": "TODO: Research Topic",
+          "description": "TODO: Key insight or open question.",
+          "status": "researching"
+        }
+      ]
+    },
+    {
+      "title": "What If?",
+      "items": [
+        {
+          "title": "TODO: Speculative Question",
+          "description": "TODO: Why this question is interesting.",
+          "status": "wondering"
+        }
+      ]
+    },
+    {
+      "title": "Reading Backlog",
+      "items": [
+        {
+          "title": "TODO: Paper/Book Title",
+          "description": "TODO: Why it's on the list.",
+          "status": "queued"
+        }
+      ]
+    }
+  ]
+}

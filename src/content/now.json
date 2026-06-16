@@ -1,0 +1,50 @@
+{
+  "lastUpdated": "2025-06-15",
+  "location": "TODO: City, Country",
+  "focus": "TODO: One-line focus statement (e.g., 'Deep in JEE preparation and quantum computing research')",
+  "sections": [
+    {
+      "title": "Current Goals",
+      "items": [
+        "TODO: Goal 1",
+        "TODO: Goal 2",
+        "TODO: Goal 3"
+      ]
+    },
+    {
+      "title": "JEE Preparation",
+      "items": [
+        "TODO: Current status/phase of preparation",
+        "TODO: Subjects or topics currently focused on"
+      ]
+    },
+    {
+      "title": "Currently Reading",
+      "items": [
+        "TODO: Book Title by Author",
+        "TODO: Book Title by Author"
+      ]
+    },
+    {
+      "title": "Active Projects",
+      "items": [
+        "TODO: Project and what stage it's at",
+        "TODO: Project and what stage it's at"
+      ]
+    },
+    {
+      "title": "Research Interests",
+      "items": [
+        "TODO: Research area and specific question",
+        "TODO: Research area and specific question"
+      ]
+    },
+    {
+      "title": "Recently Learned",
+      "items": [
+        "TODO: Concept or idea recently understood",
+        "TODO: Concept or idea recently understood"
+      ]
+    }
+  ]
+}
