@@ -1,27 +1,4 @@
 {
-  "articles": [
-    {
-      "id": "art-1",
-      "title": "TODO: Article Title",
-      "description": "TODO: Brief summary of the article.",
-      "date": "2025-01-01",
-      "platform": "substack",
-      "url": "https://TODO.substack.com/p/TODO",
-      "tags": ["TODO"],
-      "featured": true,
-      "readingTime": 5
-    },
-    {
-      "id": "art-2",
-      "title": "TODO: Article Title",
-      "description": "TODO: Brief summary of the article.",
-      "date": "2025-01-01",
-      "platform": "substack",
-      "url": "https://TODO.substack.com/p/TODO",
-      "tags": ["TODO"],
-      "featured": false,
-      "readingTime": 7
-    }
-  ],
-  "substackUrl": "https://TODO.substack.com"
+  "articles": [],
+  "substackUrl": "https://harshithvankela.substack.com"
 }
