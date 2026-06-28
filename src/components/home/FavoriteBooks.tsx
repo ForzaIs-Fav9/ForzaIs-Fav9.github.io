@@ -5,6 +5,10 @@ import { fadeInUp, staggerContainer } from "@/lib/animations";
 import { favoriteBooks } from "@/lib/content";
 
 export function FavoriteBooks() {
+  const realBooks = favoriteBooks.filter((b) => !b.title.startsWith("TODO"));
+
+  if (realBooks.length === 0) return null;
+
   return (
     <section className="border-t border-border py-16">
       <h2 className="font-serif text-heading-2 font-semibold text-text-primary">
@@ -21,7 +25,7 @@ export function FavoriteBooks() {
         viewport={{ once: true }}
         className="mt-8 grid gap-4 sm:grid-cols-2"
       >
-        {favoriteBooks.map((book) => (
+        {realBooks.map((book) => (
           <motion.a
             key={book.id}
             variants={fadeInUp}

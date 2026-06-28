@@ -35,11 +35,11 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: SITE_NAME,
-    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.svg", width: 1200, height: 630, type: "image/svg+xml" }],
   },
   twitter: {
     card: "summary_large_image",
-    creator: "@TODO",
+    creator: "@harshithvankela",
   },
   robots: { index: true, follow: true },
 };
@@ -53,11 +53,34 @@ export default function RootLayout({
     <html
       lang="en"
       className={`dark ${inter.variable} ${playfair.variable} ${jetbrains.variable}`}
+      suppressHydrationWarning
     >
       <body className="font-sans">
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `/*
+  You found the source. Good.
+
+  "The reward for curiosity is not the answer —
+   it's the better question."
+
+  There are a few hidden layers to this site.
+  They reveal how I think, not what I know.
+  Keep looking.
+
+  — HV
+*/`,
+          }}
+        />
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[200] focus:rounded-md focus:bg-accent focus:px-4 focus:py-2 focus:text-sm focus:text-background"
+        >
+          Skip to content
+        </a>
         <ClientShell />
         <Header />
-        <main className="relative z-10 min-h-screen pt-16">{children}</main>
+        <main id="main-content" className="relative z-10 min-h-screen pt-16">{children}</main>
         <Footer />
       </body>
     </html>

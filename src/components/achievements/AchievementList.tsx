@@ -16,6 +16,18 @@ const categoryVariant: Record<string, "academic" | "technical" | "research" | "s
 };
 
 export function AchievementList() {
+  const realAchievements = achievements.filter((a) => !a.title.startsWith("TODO"));
+
+  if (realAchievements.length === 0) {
+    return (
+      <div className="rounded-xl border border-border bg-surface p-8 text-center">
+        <p className="text-text-secondary">
+          Achievements will be listed here as they are documented.
+        </p>
+      </div>
+    );
+  }
+
   return (
     <motion.div
       variants={staggerContainer}
@@ -24,7 +36,7 @@ export function AchievementList() {
       viewport={{ once: true }}
       className="space-y-4"
     >
-      {achievements.map((achievement) => (
+      {realAchievements.map((achievement) => (
         <motion.div
           key={achievement.id}
           variants={fadeInUp}

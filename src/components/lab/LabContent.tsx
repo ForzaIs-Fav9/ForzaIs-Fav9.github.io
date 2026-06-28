@@ -14,6 +14,25 @@ const statusColors: Record<string, string> = {
 };
 
 export function LabContent() {
+  const hasRealContent = labPage.sections.some((s) =>
+    s.items.some((item) => !item.title.startsWith("TODO"))
+  );
+
+  if (!hasRealContent) {
+    return (
+      <div>
+        <p className="mb-10 text-sm text-text-secondary italic">
+          {labPage.intro}
+        </p>
+        <div className="rounded-xl border border-border bg-surface p-8 text-center">
+          <p className="text-text-secondary">
+            Experiments and ideas are being documented. Check back soon.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div>
       <p className="mb-10 text-sm text-text-secondary italic">

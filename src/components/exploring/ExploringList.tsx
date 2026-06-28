@@ -7,6 +7,18 @@ import { Badge } from "@/components/ui/Badge";
 import { ExternalLink } from "@/components/ui/ExternalLink";
 
 export function ExploringList() {
+  const realTopics = exploringTopics.filter((t) => !t.topic.startsWith("TODO"));
+
+  if (realTopics.length === 0) {
+    return (
+      <div className="rounded-xl border border-border bg-surface p-8 text-center">
+        <p className="text-text-secondary">
+          Currently exploring new topics. Updates coming soon.
+        </p>
+      </div>
+    );
+  }
+
   return (
     <motion.div
       variants={staggerContainer}
@@ -15,7 +27,7 @@ export function ExploringList() {
       viewport={{ once: true }}
       className="space-y-6"
     >
-      {exploringTopics.map((topic) => (
+      {realTopics.map((topic) => (
         <motion.div
           key={topic.id}
           variants={fadeInUp}

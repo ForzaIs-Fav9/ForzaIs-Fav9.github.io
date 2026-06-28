@@ -5,6 +5,20 @@ import { fadeInUp, staggerContainer } from "@/lib/animations";
 import { nowPage } from "@/lib/content";
 
 export function NowContent() {
+  const hasTodoContent = nowPage.sections.every((s) =>
+    s.items.every((item) => item.startsWith("TODO"))
+  );
+
+  if (hasTodoContent) {
+    return (
+      <div className="rounded-xl border border-border bg-surface p-8 text-center">
+        <p className="text-text-secondary">
+          This page is being updated. Check back soon.
+        </p>
+      </div>
+    );
+  }
+
   return (
     <motion.div
       variants={staggerContainer}
@@ -19,7 +33,9 @@ export function NowContent() {
             {section.title}
           </h2>
           <ul className="mt-4 space-y-2">
-            {section.items.map((item, i) => (
+            {section.items
+              .filter((item) => !item.startsWith("TODO"))
+              .map((item, i) => (
               <li
                 key={i}
                 className="flex items-start gap-3 text-sm text-text-secondary"

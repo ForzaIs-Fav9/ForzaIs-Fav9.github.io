@@ -42,8 +42,10 @@ export function Starfield({ intensity = 1 }: StarfieldProps) {
     window.addEventListener("resize", resize);
 
     let time = 0;
+    let running = true;
+
     const animate = () => {
-      if (!ctx || !canvas) return;
+      if (!running || !ctx || !canvas) return;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       time += 0.01;
 
@@ -58,10 +60,23 @@ export function Starfield({ intensity = 1 }: StarfieldProps) {
       animationRef.current = requestAnimationFrame(animate);
     };
 
+    const handleVisibility = () => {
+      if (document.hidden) {
+        running = false;
+        cancelAnimationFrame(animationRef.current);
+      } else {
+        running = true;
+        animate();
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibility);
     animate();
 
     return () => {
+      running = false;
       window.removeEventListener("resize", resize);
+      document.removeEventListener("visibilitychange", handleVisibility);
       cancelAnimationFrame(animationRef.current);
     };
   }, [initStars]);

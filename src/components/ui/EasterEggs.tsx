@@ -1,39 +1,37 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useCallback } from "react";
 
 interface EasterEggsProps {
-  onKonamiActivated: () => void;
+  onEulerActivated: () => void;
 }
 
-const KONAMI_CODE = [
-  "ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown",
-  "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight",
-  "KeyB", "KeyA",
-];
+export function EasterEggs({ onEulerActivated }: EasterEggsProps) {
+  const typedRef = useRef("");
 
-export function EasterEggs({ onKonamiActivated }: EasterEggsProps) {
-  const sequenceRef = useRef<string[]>([]);
+  const checkSequence = useCallback((typed: string) => {
+    if (typed.endsWith("e^ipi+1=0") || typed.endsWith("eipi+1=0")) {
+      onEulerActivated();
+      typedRef.current = "";
+    }
+  }, [onEulerActivated]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      sequenceRef.current.push(e.code);
-      if (sequenceRef.current.length > KONAMI_CODE.length) {
-        sequenceRef.current.shift();
-      }
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
 
-      if (
-        sequenceRef.current.length === KONAMI_CODE.length &&
-        sequenceRef.current.every((key, i) => key === KONAMI_CODE[i])
-      ) {
-        onKonamiActivated();
-        sequenceRef.current = [];
+      if (e.key.length === 1) {
+        typedRef.current += e.key.toLowerCase();
+        if (typedRef.current.length > 20) {
+          typedRef.current = typedRef.current.slice(-15);
+        }
+        checkSequence(typedRef.current);
       }
     };
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [onKonamiActivated]);
+  }, [checkSequence]);
 
   return null;
 }

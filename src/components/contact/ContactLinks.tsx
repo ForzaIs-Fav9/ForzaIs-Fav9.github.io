@@ -9,31 +9,26 @@ const links = [
     label: "Email",
     href: `mailto:${personal.socials.email}`,
     description: "For direct inquiries and collaborations",
-    icon: "✉",
   },
   {
     label: "GitHub",
     href: personal.socials.github,
     description: "Open source work and project code",
-    icon: "⌨",
   },
   {
     label: "Substack",
     href: personal.socials.substack,
     description: "Essays and long-form writing",
-    icon: "✍",
   },
   {
     label: "LinkedIn",
     href: personal.socials.linkedin,
     description: "Professional network and background",
-    icon: "🔗",
   },
   {
     label: "Twitter / X",
     href: personal.socials.twitter,
     description: "Thoughts, threads, and conversations",
-    icon: "💬",
   },
 ];
 
@@ -54,15 +49,12 @@ export function ContactLinks() {
           href={link.href}
           target={link.href.startsWith("mailto") ? undefined : "_blank"}
           rel={link.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
-          className="flex items-start gap-4 rounded-xl border border-border bg-surface p-5 transition-colors hover:border-accent/30 hover:bg-surface-hover"
+          className="flex flex-col rounded-xl border border-border bg-surface p-5 transition-colors hover:border-accent/30 hover:bg-surface-hover"
         >
-          <span className="text-xl">{link.icon}</span>
-          <div>
-            <p className="font-medium text-text-primary">{link.label}</p>
-            <p className="mt-0.5 text-sm text-text-tertiary">
-              {link.description}
-            </p>
-          </div>
+          <p className="font-medium text-text-primary">{link.label}</p>
+          <p className="mt-1 text-sm text-text-tertiary">
+            {link.description}
+          </p>
         </motion.a>
       ))}
     </motion.div>

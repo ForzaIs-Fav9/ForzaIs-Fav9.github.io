@@ -15,6 +15,18 @@ const categoryVariant: Record<string, "academic" | "technical" | "research" | "s
 };
 
 export function ProjectGrid() {
+  const realProjects = projects.filter((p) => !p.title.startsWith("TODO"));
+
+  if (realProjects.length === 0) {
+    return (
+      <div className="rounded-xl border border-border bg-surface p-8 text-center">
+        <p className="text-text-secondary">
+          Projects are in development. Check back soon.
+        </p>
+      </div>
+    );
+  }
+
   return (
     <motion.div
       variants={staggerContainer}
@@ -23,7 +35,7 @@ export function ProjectGrid() {
       viewport={{ once: true }}
       className="grid gap-6 sm:grid-cols-2"
     >
-      {projects.map((project) => (
+      {realProjects.map((project) => (
         <motion.div
           key={project.id}
           variants={fadeInUp}

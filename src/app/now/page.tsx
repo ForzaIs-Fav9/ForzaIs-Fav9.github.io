@@ -18,7 +18,7 @@ export default function NowPage() {
       <PageWrapper>
         <SectionHeading
           title="Now"
-          subtitle={nowPage.focus}
+          subtitle={nowPage.focus.startsWith("TODO") ? "What I'm focused on right now." : nowPage.focus}
         />
         <p className="mb-2 text-sm text-text-tertiary">
           Last updated:{" "}

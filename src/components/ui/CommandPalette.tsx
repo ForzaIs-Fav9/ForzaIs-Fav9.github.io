@@ -11,7 +11,7 @@ const allPages = [
   { label: "Exploring", href: "/exploring" },
 ];
 
-export function CommandPalette({ onQuantumMode }: { onQuantumMode: () => void }) {
+export function CommandPalette({ onQuantumMode, onDarkMatter }: { onQuantumMode: () => void; onDarkMatter: () => void }) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -45,12 +45,17 @@ export function CommandPalette({ onQuantumMode }: { onQuantumMode: () => void })
   }, [open]);
 
   useEffect(() => {
-    if (query.toLowerCase() === "quantum") {
+    const q = query.toLowerCase().trim();
+    if (q === "quantum") {
       onQuantumMode();
       setOpen(false);
       setQuery("");
+    } else if (q === "dark matter" || q === "darkmatter") {
+      onDarkMatter();
+      setOpen(false);
+      setQuery("");
     }
-  }, [query, onQuantumMode]);
+  }, [query, onQuantumMode, onDarkMatter]);
 
   const navigate = (href: string) => {
     router.push(href);
@@ -101,14 +106,14 @@ export function CommandPalette({ onQuantumMode }: { onQuantumMode: () => void })
                   setSelectedIndex(0);
                 }}
                 onKeyDown={handlePaletteKey}
-                placeholder="Navigate to... (or type 'quantum')"
+                placeholder="Navigate to..."
                 className="w-full bg-transparent px-3 py-4 text-sm text-text-primary placeholder:text-text-tertiary focus:outline-none"
               />
               <kbd className="rounded border border-border px-1.5 py-0.5 text-xs text-text-tertiary">
                 esc
               </kbd>
             </div>
-            <ul className="max-h-64 overflow-y-auto p-2">
+            <ul className="max-h-64 overflow-y-auto p-2" role="listbox" aria-label="Pages">
               {filtered.map((page, i) => (
                 <li key={page.href}>
                   <button

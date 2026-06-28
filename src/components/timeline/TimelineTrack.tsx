@@ -16,6 +16,7 @@ const categoryVariant: Record<string, "academic" | "technical" | "research" | "s
 
 export function TimelineTrack() {
   const [showFuture, setShowFuture] = useState(false);
+  const realMilestones = milestones.filter((m) => !m.title.startsWith("TODO"));
 
   return (
     <motion.div
@@ -29,17 +30,17 @@ export function TimelineTrack() {
       <div className="absolute left-4 top-0 h-full w-px bg-border sm:left-1/2" />
 
       <div className="space-y-12">
-        {/* Future milestones — revealed on hover */}
-        <div
-          onMouseEnter={() => setShowFuture(true)}
-          onMouseLeave={() => setShowFuture(false)}
-          className="relative cursor-default"
-        >
+        {/* Future milestones */}
+        <div className="relative">
           <div className="absolute left-4 top-2 z-10 h-2.5 w-2.5 -translate-x-1/2 rounded-full border-2 border-accent/40 bg-background sm:left-1/2" />
           <div className="ml-10 sm:ml-0 sm:pl-[calc(50%+3rem)]">
-            <p className="text-xs font-medium text-text-tertiary italic">
-              {showFuture ? "Where I'm headed..." : "Hover to see what's next →"}
-            </p>
+            <button
+              onClick={() => setShowFuture(!showFuture)}
+              className="text-xs font-medium text-text-tertiary italic hover:text-accent transition-colors"
+              aria-expanded={showFuture}
+            >
+              {showFuture ? "Where I'm headed..." : "Tap to see what's next →"}
+            </button>
             {showFuture && (
               <motion.div
                 initial={{ opacity: 0, height: 0 }}
@@ -65,7 +66,14 @@ export function TimelineTrack() {
         </div>
 
         {/* Past milestones */}
-        {milestones.map((milestone, index) => (
+        {realMilestones.length === 0 && (
+          <div className="ml-10 sm:ml-0 sm:text-center">
+            <p className="text-sm text-text-tertiary">
+              Milestones are being documented. Check back soon.
+            </p>
+          </div>
+        )}
+        {realMilestones.map((milestone, index) => (
           <motion.div
             key={milestone.id}
             variants={fadeInUp}

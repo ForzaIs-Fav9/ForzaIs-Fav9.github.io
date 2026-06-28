@@ -1,49 +1,48 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import dynamic from "next/dynamic";
 import { AnimatePresence } from "framer-motion";
 import { Starfield } from "@/components/ui/Starfield";
 import { CommandPalette } from "@/components/ui/CommandPalette";
 import { EasterEggs } from "@/components/ui/EasterEggs";
-import { QuantumOverlay } from "@/components/ui/QuantumOverlay";
-import { CuriosityMode } from "@/components/ui/CuriosityMode";
-import { SecretHint } from "@/components/ui/SecretHint";
+
+const QuantumOverlay = dynamic(
+  () => import("@/components/ui/QuantumOverlay").then((m) => ({ default: m.QuantumOverlay })),
+  { ssr: false }
+);
+const EulerOverlay = dynamic(
+  () => import("@/components/ui/EulerOverlay").then((m) => ({ default: m.EulerOverlay })),
+  { ssr: false }
+);
+const DarkMatterMode = dynamic(
+  () => import("@/components/ui/DarkMatterMode").then((m) => ({ default: m.DarkMatterMode })),
+  { ssr: false }
+);
+
+type ActiveOverlay = "quantum" | "euler" | "dark-matter" | null;
 
 export function ClientShell() {
-  const [starIntensity, setStarIntensity] = useState(1);
-  const [quantumMode, setQuantumMode] = useState(false);
-  const [curiosityMode, setCuriosityMode] = useState(false);
+  const [activeOverlay, setActiveOverlay] = useState<ActiveOverlay>(null);
 
-  const handleKonami = useCallback(() => {
-    setCuriosityMode(true);
-    setStarIntensity(2.5);
-  }, []);
+  const dismiss = useCallback(() => setActiveOverlay(null), []);
 
-  const handleCuriosityDismiss = useCallback(() => {
-    setCuriosityMode(false);
-    setStarIntensity(1.5);
-    setTimeout(() => setStarIntensity(1), 5000);
-  }, []);
-
-  const handleQuantumMode = useCallback(() => {
-    setQuantumMode(true);
-  }, []);
-
-  const handleQuantumDismiss = useCallback(() => {
-    setQuantumMode(false);
-  }, []);
+  const handleQuantumMode = useCallback(() => setActiveOverlay("quantum"), []);
+  const handleDarkMatter = useCallback(() => setActiveOverlay("dark-matter"), []);
+  const handleEuler = useCallback(() => setActiveOverlay("euler"), []);
 
   return (
     <>
-      <Starfield intensity={starIntensity} />
-      <CommandPalette onQuantumMode={handleQuantumMode} />
-      <EasterEggs onKonamiActivated={handleKonami} />
-      <SecretHint />
+      <Starfield intensity={1} />
+      <CommandPalette
+        onQuantumMode={handleQuantumMode}
+        onDarkMatter={handleDarkMatter}
+      />
+      <EasterEggs onEulerActivated={handleEuler} />
       <AnimatePresence>
-        {quantumMode && <QuantumOverlay onDismiss={handleQuantumDismiss} />}
-      </AnimatePresence>
-      <AnimatePresence>
-        {curiosityMode && <CuriosityMode onDismiss={handleCuriosityDismiss} />}
+        {activeOverlay === "quantum" && <QuantumOverlay onDismiss={dismiss} />}
+        {activeOverlay === "euler" && <EulerOverlay onDismiss={dismiss} />}
+        {activeOverlay === "dark-matter" && <DarkMatterMode onDismiss={dismiss} />}
       </AnimatePresence>
     </>
   );

@@ -56,10 +56,10 @@ export function Header() {
                 new KeyboardEvent("keydown", { key: "k", metaKey: true })
               );
             }}
-            className="ml-3 flex items-center gap-1.5 rounded-md border border-border px-2 py-1 text-xs text-text-tertiary transition-colors hover:border-accent/30 hover:text-text-secondary"
-            aria-label="Open command palette"
+            className="ml-3 flex items-center gap-1.5 rounded-md border border-border px-2.5 py-1.5 text-xs text-text-tertiary transition-colors hover:border-accent/30 hover:text-text-secondary"
+            aria-label="Open command palette (Cmd+K)"
           >
-            <kbd>⌘K</kbd>
+            <kbd className="font-mono">⌘K</kbd>
           </button>
         </div>
 

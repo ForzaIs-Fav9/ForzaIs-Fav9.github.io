@@ -4,6 +4,7 @@ import { Container } from "@/components/layout/Container";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Interests } from "@/components/about/Interests";
+import { PhilosophyBlock } from "@/components/about/PhilosophyBlock";
 import { personal } from "@/lib/content";
 
 export const metadata: Metadata = createMetadata({
@@ -27,14 +28,7 @@ export default function AboutPage() {
           ))}
         </div>
 
-        <div className="mt-16">
-          <h2 className="font-serif text-heading-2 font-semibold text-text-primary">
-            Philosophy
-          </h2>
-          <blockquote className="mt-4 border-l-2 border-accent pl-6 text-lg italic text-text-secondary">
-            {personal.philosophy}
-          </blockquote>
-        </div>
+        <PhilosophyBlock />
 
         <div className="mt-16">
           <h2 className="mb-8 font-serif text-heading-2 font-semibold text-text-primary">

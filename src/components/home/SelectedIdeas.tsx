@@ -5,6 +5,10 @@ import { fadeInUp, staggerContainer } from "@/lib/animations";
 import { ideas } from "@/lib/content";
 
 export function SelectedIdeas() {
+  const realIdeas = ideas.filter((i) => !i.title.startsWith("TODO"));
+
+  if (realIdeas.length === 0) return null;
+
   return (
     <section className="border-t border-border py-16">
       <h2 className="font-serif text-heading-2 font-semibold text-text-primary">
@@ -21,7 +25,7 @@ export function SelectedIdeas() {
         viewport={{ once: true }}
         className="mt-8 space-y-4"
       >
-        {ideas.map((idea) => (
+        {realIdeas.map((idea) => (
           <motion.div
             key={idea.id}
             variants={fadeInUp}

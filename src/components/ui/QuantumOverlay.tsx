@@ -25,28 +25,23 @@ export function QuantumOverlay({ onDismiss }: { onDismiss: () => void }) {
 
       const cx = canvas.width / 2;
       const cy = canvas.height / 2;
-      const radius = Math.min(cx, cy) * 0.3;
+      const radius = Math.min(cx, cy) * 0.25;
 
-      // Bloch sphere wireframe
       ctx.strokeStyle = "rgba(129, 140, 248, 0.3)";
       ctx.lineWidth = 1;
 
-      // Equator
       ctx.beginPath();
       ctx.ellipse(cx, cy, radius, radius * 0.3, 0, 0, Math.PI * 2);
       ctx.stroke();
 
-      // Vertical circle
       ctx.beginPath();
       ctx.ellipse(cx, cy, radius * 0.3, radius, 0, 0, Math.PI * 2);
       ctx.stroke();
 
-      // Meridian
       ctx.beginPath();
       ctx.ellipse(cx, cy, radius, radius, 0, 0, Math.PI * 2);
       ctx.stroke();
 
-      // State vector
       const theta = time;
       const phi = time * 0.7;
       const sx = cx + radius * Math.sin(theta) * Math.cos(phi);
@@ -59,22 +54,10 @@ export function QuantumOverlay({ onDismiss }: { onDismiss: () => void }) {
       ctx.lineWidth = 2;
       ctx.stroke();
 
-      // Point
       ctx.beginPath();
       ctx.arc(sx, sy, 4, 0, Math.PI * 2);
       ctx.fillStyle = "rgba(129, 140, 248, 1)";
       ctx.fill();
-
-      // Wavefunction probability clouds
-      for (let i = 0; i < 5; i++) {
-        const wx = cx + Math.cos(time + i * 1.2) * radius * 1.5;
-        const wy = cy + Math.sin(time * 0.8 + i * 1.5) * radius;
-        const wSize = 20 + Math.sin(time + i) * 10;
-        ctx.beginPath();
-        ctx.arc(wx, wy, wSize, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(129, 140, 248, ${0.05 + Math.sin(time + i) * 0.03})`;
-        ctx.fill();
-      }
 
       animId = requestAnimationFrame(draw);
     };
@@ -84,8 +67,15 @@ export function QuantumOverlay({ onDismiss }: { onDismiss: () => void }) {
   }, []);
 
   useEffect(() => {
-    const timer = setTimeout(onDismiss, 6000);
-    return () => clearTimeout(timer);
+    const timer = setTimeout(onDismiss, 12000);
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onDismiss();
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("keydown", handleKey);
+    };
   }, [onDismiss]);
 
   return (
@@ -93,17 +83,30 @@ export function QuantumOverlay({ onDismiss }: { onDismiss: () => void }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="pointer-events-none fixed inset-0 z-[150]"
+      className="fixed inset-0 z-[150] cursor-pointer"
+      onClick={onDismiss}
+      role="dialog"
+      aria-modal="true"
+      aria-label="Quantum state visualization"
     >
       <canvas ref={canvasRef} className="h-full w-full" />
-      <motion.p
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5 }}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 text-sm text-accent/80"
-      >
-        Observation changes the system.
-      </motion.p>
+      <div className="absolute inset-0 flex flex-col items-center justify-end pb-20">
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1 }}
+          className="max-w-md px-6 text-center"
+        >
+          <p className="text-sm text-text-secondary">
+            A qubit exists in superposition until measured.
+            I think the best ideas work the same way — they stay open,
+            entangled with other possibilities, until you commit to building one.
+          </p>
+          <p className="mt-4 text-xs text-text-tertiary">
+            This is a Bloch sphere — the state space of a single qubit.
+          </p>
+        </motion.div>
+      </div>
     </motion.div>
   );
 }

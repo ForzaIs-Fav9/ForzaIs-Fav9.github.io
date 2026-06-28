@@ -1,0 +1,34 @@
+{
+  "eggs": [
+    {
+      "id": "quantum",
+      "name": "Quantum Observer",
+      "trigger": "Type 'quantum' in the command palette (⌘K)",
+      "reward": "Bloch sphere visualization with a personal reflection on superposition and commitment"
+    },
+    {
+      "id": "dark-matter",
+      "name": "Dark Matter",
+      "trigger": "Type 'dark matter' in the command palette (⌘K)",
+      "reward": "Hidden margin annotations revealing personal learning philosophy"
+    },
+    {
+      "id": "euler",
+      "name": "Euler's Identity",
+      "trigger": "Type 'e^ipi+1=0' anywhere on the site (not in an input field)",
+      "reward": "Visual meditation on the five fundamental constants and mathematical beauty"
+    },
+    {
+      "id": "feynman",
+      "name": "Feynman's Principle",
+      "trigger": "Click the philosophy quote on the About page three times",
+      "reward": "Feynman's last blackboard message with personal reflection on building to understand"
+    },
+    {
+      "id": "source",
+      "name": "View Source",
+      "trigger": "View the page source (Ctrl/Cmd+U or browser developer tools)",
+      "reward": "A hidden message in the HTML about curiosity"
+    }
+  ]
+}

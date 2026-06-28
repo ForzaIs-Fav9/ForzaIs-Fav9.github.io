@@ -22,7 +22,7 @@ export function Hero() {
 
       <motion.h1
         variants={fadeInUp}
-        className="mt-4 font-serif text-display font-bold text-text-primary"
+        className="mt-4 font-serif text-heading-1 font-bold text-text-primary sm:text-display"
       >
         {personal.name}
       </motion.h1>
