@@ -58,6 +58,7 @@ export type Project = {
   featured: boolean;
   image: string;
   date: string;
+  hasPage?: boolean;
 };
 
 export type Article = {

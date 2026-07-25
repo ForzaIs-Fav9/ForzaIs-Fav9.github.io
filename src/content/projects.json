@@ -3,11 +3,12 @@
     {
       "id": "mechlang",
       "title": "MechLang",
-      "description": "A mechanical programming language exploring computation through physical metaphors.",
-      "longDescription": "MechLang is a programming language that models computation as mechanical processes — gears, levers, and physical transformations. It explores how thinking about code through the lens of physical systems can reveal new abstractions.",
+      "description": "A domain-specific language for representing and visualizing organic chemistry reaction mechanisms.",
+      "longDescription": "MechLang is a domain-specific language designed to represent organic chemistry reaction mechanisms as structured, executable code — replacing static diagrams with a notation that both humans and computers can understand.",
       "technologies": [
-        "Rust",
-        "PEG Parsers",
+        "TypeScript",
+        "PEG.js",
+        "SVG Rendering",
         "Language Design"
       ],
       "category": "ai",
@@ -17,7 +18,8 @@
       },
       "featured": true,
       "image": "/images/projects/mechlang.png",
-      "date": "2026-07"
+      "date": "2025-12",
+      "hasPage": true
     }
   ]
 }
