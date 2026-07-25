@@ -25,11 +25,6 @@ const links = [
     href: personal.socials.linkedin,
     description: "Professional network and background",
   },
-  {
-    label: "Twitter / X",
-    href: personal.socials.twitter,
-    description: "Thoughts, threads, and conversations",
-  },
 ];
 
 export function ContactLinks() {
@@ -41,7 +36,7 @@ export function ContactLinks() {
       viewport={{ once: true }}
       className="mt-12 grid gap-4 sm:grid-cols-2"
     >
-      {links.map((link) => (
+      {links.filter(link => link.href).map((link) => (
         <motion.a
           key={link.label}
           variants={fadeInUp}
