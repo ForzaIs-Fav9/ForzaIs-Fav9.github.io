@@ -87,17 +87,20 @@ export function ProjectGrid() {
               {project.links.paper && (
                 <ExternalLink href={project.links.paper}>Paper</ExternalLink>
               )}
+              {project.hasPage && (
+                <Link
+                  href={`/projects/${project.id}`}
+                  className="inline-flex items-center gap-1 text-accent transition-colors hover:text-accent-hover"
+                >
+                  Journal
+                  <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              )}
             </div>
           </motion.div>
         );
-
-        if (project.hasPage) {
-          return (
-            <Link key={project.id} href={`/projects/${project.id}`} className="block">
-              {card}
-            </Link>
-          );
-        }
 
         return card;
       })}
