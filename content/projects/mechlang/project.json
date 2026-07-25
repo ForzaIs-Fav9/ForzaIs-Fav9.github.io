@@ -1,10 +1,10 @@
 {
   "id": "mechlang",
   "title": "MechLang",
-  "description": "A domain-specific language for representing and visualizing organic chemistry reaction mechanisms.",
+  "description": "MechLang explores a simple question: can chemistry be represented better than static diagrams? It is a domain-specific language for writing, understanding, and visualizing organic reaction mechanisms as structured code that both humans and computers can reason about.",
   "longDescription": "MechLang is a domain-specific language designed to represent organic chemistry reaction mechanisms as structured, executable code — replacing static diagrams with a notation that both humans and computers can understand.",
-  "technologies": ["TypeScript", "PEG.js", "SVG Rendering", "Language Design"],
-  "category": "ai",
+  "technologies": ["TypeScript", "DSL", "Parser", "SVG"],
+  "category": "language-design",
   "status": "in-progress",
   "links": {
     "github": "https://github.com/ForzaIs-Fav9/mechlang"
