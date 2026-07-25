@@ -39,4 +39,67 @@
   .glass {
     @apply bg-surface/80 backdrop-blur-md border border-border;
   }
+
+  .prose-journal {
+    @apply text-sm text-text-secondary leading-relaxed;
+  }
+
+  .prose-journal p + p {
+    @apply mt-4;
+  }
+
+  .prose-journal h1,
+  .prose-journal h2,
+  .prose-journal h3 {
+    @apply font-serif font-semibold text-text-primary mt-6 mb-2;
+  }
+
+  .prose-journal h1 {
+    @apply text-heading-2;
+  }
+
+  .prose-journal h2 {
+    @apply text-heading-3;
+  }
+
+  .prose-journal h3 {
+    @apply text-body font-semibold;
+  }
+
+  .prose-journal ul,
+  .prose-journal ol {
+    @apply mt-3 ml-5 space-y-1;
+  }
+
+  .prose-journal ul {
+    @apply list-disc;
+  }
+
+  .prose-journal ol {
+    @apply list-decimal;
+  }
+
+  .prose-journal code {
+    @apply font-mono text-xs bg-background rounded px-1.5 py-0.5 text-accent;
+  }
+
+  .prose-journal pre {
+    @apply mt-4 rounded-lg bg-background p-4 overflow-x-auto;
+  }
+
+  .prose-journal pre code {
+    @apply bg-transparent p-0;
+  }
+
+  .prose-journal blockquote {
+    @apply mt-4 border-l-2 border-accent/40 pl-4 italic text-text-tertiary;
+  }
+
+  .prose-journal a {
+    @apply text-accent underline underline-offset-2 hover:text-accent/80;
+  }
+
+  .prose-journal strong {
+    @apply font-semibold text-text-primary;
+  }
 }
