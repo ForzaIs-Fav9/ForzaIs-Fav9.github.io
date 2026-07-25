@@ -6,7 +6,9 @@ export type SubstackPost = {
   tags: string[];
 };
 
-const SUBSTACK_FEED_URL = "https://harshithvankela.substack.com/feed";
+import personalData from "@/content/personal.json";
+
+const SUBSTACK_FEED_URL = `${personalData.socials.substack}/feed`;
 
 const CORS_PROXIES = [
   (url: string) => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,

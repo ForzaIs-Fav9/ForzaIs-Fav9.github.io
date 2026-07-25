@@ -1,0 +1,15 @@
+{
+  "id": "mechlang",
+  "title": "MechLang",
+  "description": "A mechanical programming language exploring computation through physical metaphors.",
+  "longDescription": "MechLang is a programming language that models computation as mechanical processes — gears, levers, and physical transformations. It explores how thinking about code through the lens of physical systems can reveal new abstractions.",
+  "technologies": ["Rust", "PEG Parsers", "Language Design"],
+  "category": "ai",
+  "status": "in-progress",
+  "links": {
+    "github": "https://github.com/ForzaIs-Fav9/mechlang"
+  },
+  "featured": true,
+  "image": "/images/projects/mechlang.png",
+  "date": "2026-07"
+}

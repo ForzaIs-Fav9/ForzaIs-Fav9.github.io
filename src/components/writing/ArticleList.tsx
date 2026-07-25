@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 import { ExternalLink } from "@/components/ui/ExternalLink";
 import { type SubstackPost, fetchSubstackPosts } from "@/lib/substack";
+import { personal } from "@/lib/content";
 
 export function ArticleList() {
   const [posts, setPosts] = useState<SubstackPost[]>([]);
@@ -47,7 +48,7 @@ export function ArticleList() {
           Unable to load articles right now.
         </p>
         <a
-          href="https://harshithvankela.substack.com"
+          href={personal.socials.substack}
           target="_blank"
           rel="noopener noreferrer"
           className="mt-2 inline-block text-sm text-accent hover:text-accent-hover"

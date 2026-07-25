@@ -162,7 +162,6 @@ export const personal = personalData as unknown as PersonalData;
 export const achievements = achievementsData.achievements as unknown as Achievement[];
 export const projects = projectsData.projects as unknown as Project[];
 export const articles = writingData.articles as unknown as Article[];
-export const substackUrl = writingData.substackUrl;
 export const milestones = timelineData.milestones as unknown as Milestone[];
 export const futureMilestones = (timelineData as unknown as { futureMilestones: FutureMilestone[] }).futureMilestones;
 export const exploringTopics = exploringData.currentInterests as unknown as ExploringTopic[];

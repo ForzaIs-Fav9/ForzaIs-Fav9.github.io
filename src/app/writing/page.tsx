@@ -5,6 +5,7 @@ import { PageWrapper } from "@/components/layout/PageWrapper";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ArticleList } from "@/components/writing/ArticleList";
 import { Button } from "@/components/ui/Button";
+import { personal } from "@/lib/content";
 
 export const metadata: Metadata = createMetadata({
   title: "Writing",
@@ -23,7 +24,7 @@ export default function WritingPage() {
         />
 
         <div className="mb-10">
-          <Button href="https://harshithvankela.substack.com" variant="secondary" external>
+          <Button href={personal.socials.substack} variant="secondary" external>
             Subscribe on Substack &rarr;
           </Button>
         </div>
