@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback, useRef, useSyncExternalStore } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { navLinks } from "@/lib/content";
+import { commandPalette } from "@/lib/command-palette";
 
 const allPages = [
   ...navLinks,
@@ -12,7 +13,11 @@ const allPages = [
 ];
 
 export function CommandPalette({ onQuantumMode, onDarkMatter }: { onQuantumMode: () => void; onDarkMatter: () => void }) {
-  const [open, setOpen] = useState(false);
+  const open = useSyncExternalStore(
+    commandPalette.subscribe,
+    () => commandPalette.isOpen,
+    () => false
+  );
   const [query, setQuery] = useState("");
   const [selectedIndex, setSelectedIndex] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -26,11 +31,11 @@ export function CommandPalette({ onQuantumMode, onDarkMatter }: { onQuantumMode:
     (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === "k") {
         e.preventDefault();
-        setOpen((prev) => !prev);
+        commandPalette.toggle();
         setQuery("");
         setSelectedIndex(0);
       }
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") commandPalette.close();
     },
     []
   );
@@ -48,18 +53,18 @@ export function CommandPalette({ onQuantumMode, onDarkMatter }: { onQuantumMode:
     const q = query.toLowerCase().trim();
     if (q === "quantum") {
       onQuantumMode();
-      setOpen(false);
+      commandPalette.close();
       setQuery("");
     } else if (q === "dark matter" || q === "darkmatter") {
       onDarkMatter();
-      setOpen(false);
+      commandPalette.close();
       setQuery("");
     }
   }, [query, onQuantumMode, onDarkMatter]);
 
   const navigate = (href: string) => {
     router.push(href);
-    setOpen(false);
+    commandPalette.close();
     setQuery("");
   };
 
@@ -84,7 +89,7 @@ export function CommandPalette({ onQuantumMode, onDarkMatter }: { onQuantumMode:
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-[100] bg-background/80 backdrop-blur-sm"
-            onClick={() => setOpen(false)}
+            onClick={() => commandPalette.close()}
           />
           <motion.div
             initial={{ opacity: 0, scale: 0.96, y: -20 }}
