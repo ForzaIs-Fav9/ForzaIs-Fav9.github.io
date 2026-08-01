@@ -1,137 +1,148 @@
 ---
 title: Mathematical Notes
 lastUpdated: August 2026
-summary: Technical notebook documenting the mathematical development of the investigation.
+summary: Complete mathematical derivations developed throughout the investigation.
 ---
 
 # Mathematical Notes
 
-This notebook serves as the mathematical companion to the Research Journal.
+This notebook contains the technical development of the investigation.
 
-Where the journal records *how the investigation evolved*, this document records *the mathematics itself*. Every major derivation, correction, and comparison with the published literature is catalogued here.
-
-The objective is not simply to reproduce known results, but to understand every step well enough that it can be derived independently and critically examined.
+Unlike the Research Journal, which records the chronological evolution of the project, this notebook focuses exclusively on the mathematics. Every derivation is reconstructed independently wherever possible before being compared against the published literature.
 
 ---
 
-# Derivation Status
+# Contents
 
-| Topic | Status |
-|---------|--------|
-| Polarization Potential | ✅ Complete |
-| Zero-Energy Radial Equation | ✅ Complete |
-| Exact Zero-Energy Solution | ✅ Complete |
-| Jost Transformation | ✅ Complete |
-| Volterra Integral Equation | ✅ Complete |
-| Scattering Length | ✅ Complete |
-| Perturbation Expansion | 🟡 Under Revision |
-| Comparison with O'Malley (1961) | 🟡 Active |
-| Historical Electron Affinity Analysis | 🟢 Separate Research Thread |
+1. Polarization Potential
+2. Zero-Energy Radial Equation
+3. Exact Zero-Energy Solution
+4. Jost Transformation
+5. Volterra Integral Equation
+6. Perturbation Expansion
+7. Scattering Length
+8. Comparison with O'Malley (1961)
 
 ---
 
-# Completed Derivations
+# Polarization Potential
 
-## Polarization Potential
+## Starting Point
 
-The long-range interaction between an incoming electron and a neutral noble-gas atom was established as the starting point for the theoretical investigation.
+$$
+V(r)=-\frac{C_4}{r^4}
+$$
 
-Status:
+For convenience,
 
-✅ Verified
+$$
+\beta^2=\frac{2mC_4}{\hbar^2}
+$$
 
----
+giving
 
-## Zero-Energy Radial Equation
-
-The governing differential equation for the zero-energy scattering problem was derived and verified.
-
-Status:
-
-✅ Verified
-
----
-
-## Exact Zero-Energy Solution
-
-An exact analytical solution satisfying the required boundary conditions was obtained and independently verified.
-
-Status:
-
-✅ Verified
+$$
+V(r)=-\frac{\hbar^2\beta^2}{2mr^4}.
+$$
 
 ---
 
-## Jost Transformation
+## Physical Meaning
 
-The radial equation was transformed into the Jost representation to facilitate further analytical treatment.
+The long-range interaction between an incident electron and a neutral noble-gas atom is dominated by the induced polarization potential.
 
-Status:
-
-✅ Verified
+...
 
 ---
 
-## Volterra Integral Equation
+# Zero-Energy Radial Equation
 
-The corresponding Volterra integral equation was derived from the transformed differential equation and verified in the appropriate limiting cases.
+Starting from
 
-Status:
+$$
+u''+\left[k^2-\frac{2m}{\hbar^2}V(r)\right]u=0
+$$
 
-✅ Verified
+the zero-energy limit gives
 
----
+$$
+u''+\frac{\beta^2}{r^4}u=0.
+$$
 
-## Scattering Length
-
-Expressions relating the scattering length to the underlying scattering parameters were derived and compared with the established literature.
-
-Status:
-
-🟡 Supported
-
-Although mathematically consistent, the derivation continues to be compared against published treatments.
+...
 
 ---
 
-# Current Mathematical Investigation
+# Exact Zero-Energy Solution
 
-The present theoretical work focuses on understanding the origin of the non-analytic threshold terms appearing in the polarization-scattering expansion.
+Introduce
 
-Particular attention is being given to:
+$$
+x=\frac{\beta}{r}.
+$$
 
-- perturbation about the exact zero-energy solution,
-- comparison with O'Malley's distorted-wave formulation,
-- origin of the logarithmic terms,
-- comparison of independently derived coefficients with the published literature.
+After substitution,
 
-These questions remain active and continue to evolve as additional papers are studied. :contentReference[oaicite:0]{index=0}
+...
+
+Eventually,
+
+$$
+u_1=r\sin\frac{\beta}{r},
+$$
+
+$$
+u_2=r\cos\frac{\beta}{r}.
+$$
+
+Boundary conditions select the physical solution.
+
+...
 
 ---
 
-# Independent Reconstruction Philosophy
+# Jost Transformation
 
-Throughout this project, every significant derivation is reconstructed independently whenever practical.
-
-Published papers are treated as references for comparison rather than as starting points for the mathematics itself.
-
-This approach encourages a deeper understanding of the underlying physics and makes it easier to identify hidden assumptions, approximations, and opportunities for alternative derivations.
+...
 
 ---
 
-# Relationship to the Research Journal
+# Volterra Integral Equation
 
-The Research Journal documents:
+...
 
-- why each derivation was undertaken,
-- when important discoveries occurred,
-- how the direction of the investigation changed.
+---
 
-This notebook documents:
+# Perturbation Expansion
 
-- the mathematics,
-- derivation status,
-- verification progress,
-- and outstanding theoretical questions.
+Current status:
 
-Together, they provide both the historical and technical record of the investigation.
+🟡 Under revision
+
+Current issue:
+
+The perturbation expansion originally began around
+
+$$
+m(r)=1
+$$
+
+rather than
+
+$$
+m_0(r)=\cos\frac{\beta}{r}.
+$$
+
+The latter corresponds to the exact zero-energy solution and produces the appropriate distorted-wave expansion discussed by O'Malley.
+
+---
+
+# Comparison with O'Malley (1961)
+
+| Topic | Independent Derivation | O'Malley |
+|---------|-----------------------|----------|
+| Starting point | ... | ... |
+| Exact solution | ... | ... |
+| Matching | ... | ... |
+| Special functions | None | Modified Mathieu |
+| Current agreement | ... | ... |
