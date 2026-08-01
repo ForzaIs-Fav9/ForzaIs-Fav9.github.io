@@ -10,6 +10,8 @@ import ideasData from "@/content/ideas.json";
 import quotesData from "@/content/quotes.json";
 import nowData from "@/content/now.json";
 import labData from "@/content/lab.json";
+import easterEggsData from "@/content/easter-eggs.json";
+import researchData from "@/content/research.json";
 
 export type Interest = {
   label: string;
@@ -174,3 +176,33 @@ export const ideas = ideasData.ideas as unknown as Idea[];
 export const quotes = quotesData.quotes as unknown as Quote[];
 export const nowPage = nowData as unknown as NowData;
 export const labPage = labData as unknown as LabData;
+
+export type EasterEgg = {
+  id: string;
+  name: string;
+  trigger: string;
+  reward: string;
+};
+
+export const easterEggs = easterEggsData.eggs as unknown as EasterEgg[];
+
+export type ResearchLogEntry = {
+  slug: string;
+  title: string;
+  date: string;
+  phase: string;
+  summary: string;
+};
+
+export type ResearchProject = {
+  id: string;
+  title: string;
+  status: string;
+  started: string;
+  field: string;
+  summary: string;
+  pages: string[];
+  logEntries: ResearchLogEntry[];
+};
+
+export const researchProjects = researchData.projects as unknown as ResearchProject[];

@@ -3,6 +3,7 @@
     { "label": "Home", "href": "/" },
     { "label": "About", "href": "/about" },
     { "label": "Projects", "href": "/projects" },
+    { "label": "Research", "href": "/research" },
     { "label": "Writing", "href": "/writing" },
     { "label": "Now", "href": "/now" },
     { "label": "Contact", "href": "/contact" }

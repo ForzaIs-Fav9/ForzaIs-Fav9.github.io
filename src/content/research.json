@@ -1,0 +1,111 @@
+{
+  "projects": [
+    {
+      "id": "argon-krypton",
+      "title": "Argon–Krypton Electron Gain Enthalpy Investigation",
+      "status": "Active",
+      "started": "Late June 2026",
+      "field": "Atomic Physics • Electron Scattering • Physical Chemistry",
+      "summary": "An independent investigation into the reported electron gain enthalpies of argon and krypton through scattering theory and historical scientific literature.",
+      "pages": [
+        "current-status",
+        "literature",
+        "mathematical-notes",
+        "overview"
+      ],
+      "logEntries": [
+        {
+          "slug": "000-the-question",
+          "title": "The Question",
+          "date": "Late June 2026",
+          "phase": "Phase I — The Beginning",
+          "summary": "The classroom question that became a research project."
+        },
+        {
+          "slug": "001-first-quantum-investigation",
+          "title": "First Quantum-Chemistry Investigation",
+          "date": "June 13, 2026",
+          "phase": "Phase I — Initial Investigation",
+          "summary": "Defining the first precise research question and investigating what modern quantum chemistry predicts."
+        },
+        {
+          "slug": "002-stress-testing-the-hypothesis",
+          "title": "Stress-Testing the Hypothesis",
+          "date": "June 14 – July 12, 2026",
+          "phase": "Phase I — Critical Evaluation",
+          "summary": "Attempting to challenge the initial explanation before accepting it."
+        },
+        {
+          "slug": "003-building-the-scattering-framework",
+          "title": "Building the Scattering-Theory Framework",
+          "date": "Early July 2026",
+          "phase": "Phase II — Mathematical Framework",
+          "summary": "Establishing the mathematical foundation for investigating low-energy electron attachment."
+        },
+        {
+          "slug": "004-the-jost-transformation",
+          "title": "The Jost Transformation",
+          "date": "Early July 2026",
+          "phase": "Phase II — Building the Mathematics",
+          "summary": "Transforming the scattering equation into a form suitable for analytical investigation."
+        },
+        {
+          "slug": "005-constructing-the-volterra-equation",
+          "title": "Constructing the Volterra Integral Equation",
+          "date": "Early July 2026",
+          "phase": "Phase II — Building the Mathematics",
+          "summary": "Reformulating the scattering problem as an integral equation suitable for systematic analysis."
+        },
+        {
+          "slug": "006-exact-zero-energy-solution",
+          "title": "The Exact Zero-Energy Solution",
+          "date": "Early July 2026",
+          "phase": "Phase II — Building the Mathematics",
+          "summary": "Obtaining and verifying the exact analytical solution of the zero-energy polarization-scattering equation."
+        },
+        {
+          "slug": "007-scattering-length-and-threshold-behavior",
+          "title": "Scattering Length and Threshold Behavior",
+          "date": "Mid July 2026",
+          "phase": "Phase II — Building the Mathematics",
+          "summary": "Relating the exact zero-energy solution to the scattering length and the threshold behavior of low-energy electron scattering."
+        },
+        {
+          "slug": "008-reading-the-omalley-papers",
+          "title": "Reading the O'Malley Papers",
+          "date": "Mid July 2026",
+          "phase": "Phase III — Comparison with the Literature",
+          "summary": "Comparing independently reconstructed mathematics with the foundational scattering-theory papers."
+        },
+        {
+          "slug": "009-volterra-self-audit",
+          "title": "The Volterra Self-Audit",
+          "date": "Mid–Late July 2026",
+          "phase": "Phase III — Comparison with the Literature",
+          "summary": "Re-examining the perturbation framework after comparison with the original scattering-theory literature."
+        },
+        {
+          "slug": "010-historical-investigation",
+          "title": "Pivot to the Historical Investigation",
+          "date": "Late July 2026",
+          "phase": "Phase IV — Historical Investigation",
+          "summary": "Shifting the investigation from theoretical scattering physics to the historical origin of the reported electron gain enthalpy values."
+        },
+        {
+          "slug": "011-primary-source-investigation",
+          "title": "Primary-Source Investigation",
+          "date": "Late July 2026",
+          "phase": "Phase IV — Historical Investigation",
+          "summary": "Reading the foundational electron-affinity literature to determine what the original papers actually report for argon and krypton."
+        },
+        {
+          "slug": "012-searching-for-the-origin-of-plus-96",
+          "title": "Searching for the Origin of +96 kJ/mol",
+          "date": "August 2026",
+          "phase": "Phase IV — Historical Investigation",
+          "summary": "Defining the central unresolved question after examining the foundational electron-affinity literature."
+        }
+      ]
+    }
+  ]
+}

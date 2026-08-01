@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "prebuild": "node scripts/build-projects.mjs",
-    "dev": "node scripts/build-projects.mjs && next dev",
+    "prebuild": "node scripts/build-projects.mjs && node scripts/build-research.mjs",
+    "dev": "node scripts/build-projects.mjs && node scripts/build-research.mjs && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -12,6 +12,7 @@
   "dependencies": {
     "framer-motion": "^11.15.0",
     "gray-matter": "^4.0.3",
+    "katex": "^0.18.1",
     "marked": "^18.0.7",
     "next": "^15.1.0",
     "react": "^19.0.0",

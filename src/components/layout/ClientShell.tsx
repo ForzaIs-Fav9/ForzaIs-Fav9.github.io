@@ -6,6 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import { Starfield } from "@/components/ui/Starfield";
 import { CommandPalette } from "@/components/ui/CommandPalette";
 import { EasterEggs } from "@/components/ui/EasterEggs";
+import { SecretHint } from "@/components/ui/SecretHint";
 
 const QuantumOverlay = dynamic(
   () => import("@/components/ui/QuantumOverlay").then((m) => ({ default: m.QuantumOverlay })),
@@ -39,6 +40,7 @@ export function ClientShell() {
         onDarkMatter={handleDarkMatter}
       />
       <EasterEggs onEulerActivated={handleEuler} />
+      <SecretHint />
       <AnimatePresence>
         {activeOverlay === "quantum" && <QuantumOverlay onDismiss={dismiss} />}
         {activeOverlay === "euler" && <EulerOverlay onDismiss={dismiss} />}
