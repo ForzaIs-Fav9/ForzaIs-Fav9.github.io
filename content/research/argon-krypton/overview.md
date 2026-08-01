@@ -1,51 +1,116 @@
 ---
 title: Overview
 status: Active
-start: Last Week of June 2026
-field: Atomic Physics • Scattering Theory • Physical Chemistry
-summary: An investigation into the reported electron gain enthalpies of argon and krypton through scattering theory and historical primary literature.
+started: Late June 2026
+field: Atomic Physics • Electron Scattering • Physical Chemistry
+summary: An independent investigation into the reported electron gain enthalpies of argon and krypton through scattering theory and historical scientific literature.
 ---
 
 # Argon–Krypton Electron Gain Enthalpy Investigation
 
-This project began with a simple observation.
+## Overview
 
-While studying chemistry, I noticed that many textbooks reported nearly identical electron gain enthalpies for argon and krypton. At first glance, this seemed reasonable. The more I examined the problem, however, the less obvious the explanation became.
+This project began with a simple question asked during a chemistry class.
 
-Argon and krypton differ in size, electronic structure, and polarizability. If these differences influence many of their physical properties, why should they apparently accept an additional electron with the same energy?
+While discussing periodic trends, my teacher explained that argon and krypton have approximately the same electron gain enthalpy. When someone asked why, there wasn't a satisfactory explanation. The value was presented as something to remember rather than something to understand.
 
-Searching for an explanation revealed another surprise.
+That answer didn't satisfy me.
 
-Educational resources frequently quoted numerical values, but rarely discussed where those numbers originated. Primary references were seldom cited, and the historical origin of the reported values was difficult to trace.
+One principle has shaped the way I approach science:
 
-Rather than accepting the reported values without question, I decided to investigate the problem from two complementary directions.
+> **Everything has a reason.**
 
-The first is theoretical.
+If two physical quantities appear to be the same, there should be an underlying explanation. If no explanation is available, either the phenomenon has not been fully understood or the explanation has simply been lost through repetition.
 
-Using low-energy electron scattering theory, polarization potentials, and the Jost formalism, I aim to understand whether argon and krypton should exhibit similar electron attachment behavior from first principles.
+Initially, I expected to find the answer in textbooks.
 
-The second is historical.
+Instead, I found that many educational resources repeated nearly identical numerical values while providing little discussion of where those values came from or why argon and krypton should behave so similarly.
 
-By examining original experimental papers and review articles, I aim to determine when the commonly quoted values first appeared and whether they accurately reflect the underlying literature.
-
-This repository documents that investigation as it develops. Every research session is recorded chronologically so that the evolution of the ideas remains as transparent as the conclusions themselves.
+That transformed a classroom question into a research problem.
 
 ---
 
-## Research Goals
+# Research Objectives
 
-- Understand the physical basis of electron attachment in argon and krypton.
-- Investigate low-energy polarization scattering.
-- Reconstruct relevant scattering-theory derivations independently.
-- Trace the historical origin of the reported electron gain enthalpy values.
-- Distinguish experimentally established facts from educational convention.
+This investigation aims to answer three fundamental questions.
+
+1. **Are the reported electron gain enthalpies of argon and krypton actually equal?**
+
+2. **If they are similar, what physical mechanism explains that behavior?**
+
+3. **Where did the commonly quoted values originate, and do they accurately reflect the primary scientific literature?**
+
+Rather than accepting published values at face value, the objective is to understand both their physical meaning and their historical origin.
 
 ---
 
-## Current Status
+# Research Approach
 
-The investigation has progressed through theoretical derivations and into a detailed examination of the historical literature.
+The investigation developed along two parallel directions.
 
-The current open question is:
+## 1. Theoretical Investigation
 
-> **Where did the commonly quoted value of approximately +96 kJ/mol first originate?**
+The first branch studies the physics of low-energy electron attachment using scattering theory.
+
+Topics explored include:
+
+- Polarization potentials
+- Zero-energy scattering
+- Jost transformations
+- Volterra integral equations
+- Modified Effective Range Theory (MERT)
+- Quantum Defect Theory (MQDT)
+
+Where possible, mathematical derivations are reconstructed independently before being compared against the published literature.
+
+---
+
+## 2. Historical Investigation
+
+The second branch traces the reported electron gain enthalpy values back through the scientific literature.
+
+Rather than relying on modern summaries, the project examines original experimental papers and major review articles to determine:
+
+- what was actually measured,
+- what was inferred,
+- what later became accepted educational convention.
+
+---
+
+# Current Status
+
+The theoretical framework has largely been established.
+
+Current work focuses on examining the historical literature surrounding electron affinities of the noble gases.
+
+Several foundational review papers have already been examined, including work by Pritchard, Berry, and Hotop & Lineberger.
+
+One important conclusion has already emerged:
+
+> None of the foundational electron-affinity reviews examined so far assign the commonly quoted positive electron affinity values to argon or krypton.
+
+This shifts the central question from explaining the reported values to understanding **where those values first entered the scientific and educational literature.**
+
+---
+
+# Research Philosophy
+
+Scientific progress depends as much on questioning accepted ideas as on discovering new ones.
+
+This project does not begin with the assumption that existing references are wrong.
+
+Instead, it begins with the belief that every reported result deserves a clear physical explanation and a traceable scientific origin.
+
+Whenever possible, conclusions are supported directly by mathematical derivation or primary sources rather than by repetition of secondary references.
+
+---
+
+# Current Phase
+
+**Phase IV — Historical Investigation**
+
+The present objective is to identify the earliest documented origin of the commonly reported electron gain enthalpy values for argon and krypton, while continuing to refine the theoretical framework developed during the earlier stages of the investigation.
+
+---
+
+*This research journal is a living record of an ongoing investigation. Earlier entries document the reasoning and evidence available at the time they were written. As new evidence emerges, later entries may refine or overturn earlier hypotheses while preserving the historical progression of the research.*
