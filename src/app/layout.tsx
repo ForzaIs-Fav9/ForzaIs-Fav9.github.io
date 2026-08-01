@@ -26,22 +26,43 @@ const jetbrains = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+
   title: {
     default: `${SITE_NAME} — Student, Researcher, Builder`,
     template: `%s | ${SITE_NAME}`,
   },
+
   description: SITE_DESCRIPTION,
+
   openGraph: {
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
     type: "website",
     locale: "en_US",
     siteName: SITE_NAME,
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, type: "image/svg+xml" }],
+    images: [
+      {
+        url: "/home.png",
+        width: 1200,
+        height: 630,
+        alt: "Harshith Vankela",
+      },
+    ],
   },
+
   twitter: {
     card: "summary_large_image",
     creator: "@harshithvankela",
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    images: ["/home.png"],
   },
-  robots: { index: true, follow: true },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -80,7 +101,9 @@ export default function RootLayout({
         </a>
         <ClientShell />
         <Header />
-        <main id="main-content" className="relative z-10 min-h-screen pt-16">{children}</main>
+        <main id="main-content" className="relative z-10 min-h-screen pt-16">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
