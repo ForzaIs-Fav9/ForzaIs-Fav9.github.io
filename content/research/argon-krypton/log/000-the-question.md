@@ -1,101 +1,121 @@
 ---
 title: The Question
-date: Last Week of June 2026
-phase: Phase I — The Question
-summary: The classroom question that eventually became a research project.
+date: Late June 2026
+phase: Phase I — The Beginning
+summary: The classroom question that became a research project.
 ---
 
 # The Question
 
-This research did not begin in a laboratory.
+Every research project has an origin.
 
-It began in a classroom.
+Some begin with a published paper.
+Some begin with an experiment.
+This one began with a question that nobody in the room could answer.
 
-While my chemistry teacher was explaining the electron gain enthalpies of the noble gases, he mentioned that argon and krypton have approximately the same electron gain enthalpy.
+While my chemistry teacher was explaining the periodic trends of electron gain enthalpy, he mentioned that argon and krypton possess approximately the same electron gain enthalpy.
 
 Naturally, someone asked why.
 
-There wasn't an answer.
+There wasn't an explanation.
 
 The values were simply presented as a fact to remember.
 
-That didn't sit well with me.
+That answer didn't satisfy me.
 
-One principle has shaped the way I approach every subject I study:
+I've always believed that every physical phenomenon has an underlying reason. Nature doesn't make arbitrary decisions. If two quantities happen to be the same, there should be a physical explanation—not merely a number written in a textbook.
 
 > **Everything has a reason.**
 
-If two quantities appear to be the same, there should be a physical explanation. If no explanation exists, then either the question hasn't been investigated deeply enough, or the answer hasn't been communicated well.
+That belief became the foundation of this investigation.
 
-I wasn't satisfied with memorizing the result.
+Initially, I assumed the explanation already existed somewhere in the literature.
 
-I wanted to understand **why** it happened.
+Instead, I found something unexpected.
 
-At first, I expected to find an explanation in textbooks or reference material.
+Many educational resources repeated nearly identical values for argon and krypton while offering little discussion of why those values should be similar or where they had originally come from.
 
-Instead, I found that many educational resources repeated essentially the same numerical values while providing little discussion of where those numbers came from or why argon and krypton should behave so similarly.
+The more sources I consulted, the more unusual the situation appeared.
 
-That realization changed the nature of the problem.
+The problem gradually changed.
 
-The question was no longer simply:
+It was no longer simply:
 
-> *Why do argon and krypton have similar electron gain enthalpies?*
+> **Why do argon and krypton have similar electron gain enthalpies?**
 
 It became:
 
-> *Do they actually have the same electron gain enthalpy, and if so, what is the physical reason? If not, where did this idea originate?*
+> **Do they actually possess the same electron gain enthalpy? If so, why? If not, where did the reported values originate?**
 
-From that point onward, the investigation grew beyond chemistry textbooks.
+Answering those questions required moving beyond chemistry textbooks.
 
-It expanded into scattering theory, electron attachment, and eventually the historical scientific literature itself.
+The investigation eventually expanded into two complementary directions.
 
-This journal records that investigation exactly as it unfolded.
+The first explored the underlying physics through low-energy electron scattering and polarization theory.
 
----
+The second traced the historical development of the reported values through the primary scientific literature.
 
-## Objective
-
-Find a physically satisfying explanation for the reported similarity between the electron gain enthalpies of argon and krypton.
+This journal records that investigation from its very beginning.
 
 ---
 
-## Motivation
+# Objective
 
-Memorizing a result without understanding its origin was never enough.
-
-The goal of this project was not merely to know the reported values, but to understand the physical principles—and, if necessary, the historical origins—behind them.
+Understand the physical and historical basis of the reported electron gain enthalpies of argon and krypton.
 
 ---
 
-## Work Performed
+# Motivation
+
+The purpose of this project was never to challenge accepted knowledge for its own sake.
+
+It was to replace memorization with understanding.
+
+If a result appears throughout scientific education, it should have a clear physical explanation and a traceable scientific origin.
+
+---
+
+# Work Performed
 
 - Identified the unexplained similarity between the reported electron gain enthalpies of argon and krypton.
-- Searched for a physical explanation in educational resources.
-- Found that the explanation was generally absent.
+- Searched educational resources for a physical explanation.
+- Determined that existing explanations were largely absent or incomplete.
 - Decided to investigate the problem independently.
 
 ---
 
-## Results
+# Results
 
-🔴 Hypothesis: Argon and krypton genuinely possess nearly identical electron gain enthalpies for a common physical reason.
+🔴 **Hypothesis**
 
-🔴 Hypothesis: The reported similarity originates from educational convention rather than underlying physics.
-
-🔴 Hypothesis: The accepted textbook values do not fully reflect the primary scientific literature.
+Argon and krypton genuinely possess similar electron gain enthalpies because of an underlying physical mechanism.
 
 ---
 
-## Research Notes
+🔴 **Hypothesis**
 
-At this stage, no conclusions had been reached.
-
-The only certainty was that the existing explanations were unsatisfying.
-
-That alone was enough reason to investigate further.
+The commonly reported values represent an educational convention rather than a direct reflection of the primary scientific literature.
 
 ---
 
-## Next Steps
+🔴 **Hypothesis**
 
-Determine whether scattering theory can provide a physical explanation for the reported behavior before examining the historical literature.
+Low-energy electron scattering theory can provide a physical explanation for the observed behavior.
+
+---
+
+# Research Notes
+
+At this point, no mathematical derivations had been performed and no primary literature had been examined.
+
+The investigation consisted entirely of defining the problem clearly enough that every later result could be evaluated against it.
+
+Looking back, this proved to be one of the most important stages of the project.
+
+The quality of the final answer would ultimately depend on asking the right question first.
+
+---
+
+# Next Steps
+
+Investigate whether modern theoretical treatments of electron attachment and low-energy electron scattering can explain the reported similarity before examining the historical literature.
