@@ -1,15 +1,21 @@
 {
   "eggs": [
     {
+      "id": "command-palette",
+      "name": "Command Palette",
+      "trigger": "Press Ctrl+K (or ⌘K on Mac) from any page",
+      "reward": "A hidden navigation palette with search — also the gateway to deeper secrets"
+    },
+    {
       "id": "quantum",
       "name": "Quantum Observer",
-      "trigger": "Type 'quantum' in the command palette (⌘K)",
+      "trigger": "Type 'quantum' in the command palette (Ctrl+K / ⌘K)",
       "reward": "Bloch sphere visualization with a personal reflection on superposition and commitment"
     },
     {
       "id": "dark-matter",
       "name": "Dark Matter",
-      "trigger": "Type 'dark matter' in the command palette (⌘K)",
+      "trigger": "Type 'dark matter' in the command palette (Ctrl+K / ⌘K)",
       "reward": "Hidden margin annotations revealing personal learning philosophy"
     },
     {
@@ -25,10 +31,28 @@
       "reward": "Feynman's last blackboard message with personal reflection on building to understand"
     },
     {
+      "id": "hidden-pages",
+      "name": "Hidden Pages",
+      "trigger": "Use the command palette to find pages not listed in navigation",
+      "reward": "Two unlisted pages — Achievements and Exploring — accessible only through the palette"
+    },
+    {
+      "id": "lab",
+      "name": "The Lab",
+      "trigger": "Navigate to /lab directly — it's not in the menu or the command palette",
+      "reward": "A space for half-formed ideas, experiments, and speculative questions"
+    },
+    {
       "id": "source",
       "name": "View Source",
-      "trigger": "View the page source (Ctrl/Cmd+U or browser developer tools)",
+      "trigger": "View the page source (Ctrl+U / ⌘U or browser developer tools)",
       "reward": "A hidden message in the HTML about curiosity"
+    },
+    {
+      "id": "secret-hint",
+      "name": "The Hint",
+      "trigger": "Hover over the tiny '?' in the bottom-right corner of any page",
+      "reward": "A whisper that this site has secrets — and a link to this very guide"
     }
   ]
 }

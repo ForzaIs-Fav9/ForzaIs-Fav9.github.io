@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display, JetBrains_Mono } from "next/font/google";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/lib/constants";
 import { Header } from "@/components/layout/Header";
@@ -23,6 +23,10 @@ const jetbrains = JetBrains_Mono({
   variable: "--font-jetbrains",
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  themeColor: "#818cf8",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
