@@ -1,31 +1,49 @@
 {
   "achievements": [
     {
-      "id": "ach-1",
-      "title": "TODO: Achievement Title",
-      "organization": "TODO: Organization",
-      "date": "TODO",
-      "category": "academic",
-      "description": "TODO: Brief description of the achievement.",
+      "id": "ach-mtso-final",
+      "title": "Mathematics Talent Search Olympiad (MTSO) — Final Level Qualifier (2022–2025)",
+      "organization": "INTSO Education",
+      "date": "2025",
+      "category": "olympiad",
+      "description": "Qualified for and appeared at the Final Level of the MTSO conducted by INTSO Education across four consecutive years (2022, 2023, 2024, and 2025), competing at the national level in Mathematics.",
       "link": null
     },
     {
-      "id": "ach-2",
-      "title": "TODO: Achievement Title",
-      "organization": "TODO: Organization",
-      "date": "TODO",
-      "category": "research",
-      "description": "TODO: Brief description of the achievement.",
+      "id": "ach-stso-final",
+      "title": "Science Talent Search Olympiad (STSO) — Final Level Qualifier (2022–2025)",
+      "organization": "INTSO Education",
+      "date": "2025",
+      "category": "olympiad",
+      "description": "Qualified for and appeared at the Final Level of the STSO conducted by INTSO Education across four consecutive years (2022, 2023, 2024, and 2025), competing at the national level in Science.",
       "link": null
     },
     {
-      "id": "ach-3",
-      "title": "TODO: Achievement Title",
-      "organization": "TODO: Organization",
-      "date": "TODO",
+      "id": "ach-nstse-medalist",
+      "title": "NSTSE Olympiad Medalist",
+      "organization": "Unified Council",
+      "date": "2022",
+      "category": "olympiad",
+      "description": "Awarded a medal in the National Level Science Talent Search Examination (NSTSE) for strong performance in mathematics and science problem-solving.",
+      "link": null
+    },
+    {
+      "id": "ach-uco-rank",
+      "title": "Unified Cyber Olympiad (UCO) — All India Rank 610",
+      "organization": "Unified Council",
+      "date": "2022",
       "category": "competition",
-      "description": "TODO: Brief description of the achievement.",
+      "description": "Secured All India Rank 610 in the Unified Cyber Olympiad (UCO), competing at the national level in Class 8.",
       "link": null
-    }
+    },
+    {
+      "id": "ach-world-record-drill",
+      "title": "Participant — Elite World Record Sports & Fitness Drill 2020",
+      "organization": "Elite World Records",
+      "date": "2020",
+      "category": "world-record",
+      "description": "Participated in a synchronized nationwide 7-minute sports and fitness drill organized by Sri Chaitanya Educational Institutions involving over 100,000 students across 214 venues, officially recognized by Elite World Records.",
+      "link": null
+    },
   ]
 }
