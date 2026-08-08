@@ -1,49 +1,48 @@
 {
-  "lastUpdated": "2025-06-15",
-  "location": "TODO: City, Country",
-  "focus": "TODO: One-line focus statement (e.g., 'Deep in JEE preparation and quantum computing research')",
+  "lastUpdated": "2026-08-08",
+  "location": "Bengaluru, India",
+  "focus": "Finishing Grade 12 while building, researching, and following questions that genuinely interest me.",
   "sections": [
     {
-      "title": "Current Goals",
+      "title": "Right Now",
       "items": [
-        "TODO: Goal 1",
-        "TODO: Goal 2",
-        "TODO: Goal 3"
+        "Finishing Grade 12 and strengthening my foundations in mathematics, physics, chemistry, and computer science.",
+        "Preparing seriously for competitive examinations while trying to become better at solving unfamiliar problems rather than just completing more questions.",
+        "Building a habit of turning curiosity into experiments, projects, and actual research."
       ]
     },
     {
-      "title": "JEE Preparation",
+      "title": "Building",
       "items": [
-        "TODO: Current status/phase of preparation",
-        "TODO: Subjects or topics currently focused on"
+        "MechLang — a domain-specific language for representing and rendering organic reaction mechanisms.",
+        "FocusVector — a privacy-conscious browser extension exploring whether observable reading behavior can be used to estimate attention drift.",
+        "This website — an evolving record of my projects, research, writing, experiments, and ideas."
       ]
     },
     {
-      "title": "Currently Reading",
+      "title": "Research",
       "items": [
-        "TODO: Book Title by Author",
-        "TODO: Book Title by Author"
+        "Investigating why chemistry textbooks report apparently identical electron gain enthalpies for argon and krypton.",
+        "Tracing the historical origin of the reported values through primary literature.",
+        "Using scattering theory to investigate whether there is a deeper physical explanation behind the observation."
       ]
     },
     {
-      "title": "Active Projects",
+      "title": "Learning",
       "items": [
-        "TODO: Project and what stage it's at",
-        "TODO: Project and what stage it's at"
+        "Artificial intelligence and machine learning",
+        "Quantum computing and quantum information",
+        "Mathematics, physics, and computational methods",
+        "Programming and software engineering"
       ]
     },
     {
-      "title": "Research Interests",
+      "title": "Thinking About",
       "items": [
-        "TODO: Research area and specific question",
-        "TODO: Research area and specific question"
-      ]
-    },
-    {
-      "title": "Recently Learned",
-      "items": [
-        "TODO: Concept or idea recently understood",
-        "TODO: Concept or idea recently understood"
+        "How to tell whether a research question is genuinely open or simply unfamiliar.",
+        "How computational tools can help investigate scientific questions without replacing physical reasoning.",
+        "Why seemingly simple observations sometimes hide surprisingly deep explanations.",
+        "How to turn curiosity into disciplined, reproducible work."
       ]
     }
   ]
