@@ -1,25 +1,53 @@
 {
   "currentInterests": [
     {
-      "id": "exp-1",
-      "topic": "TODO: Topic Name",
-      "description": "TODO: What you're learning and why.",
-      "resources": [
-        { "title": "TODO: Resource Name", "url": "https://TODO", "type": "book" }
-      ],
-      "startedDate": "2025-01",
+      "id": "exp-theories",
+      "topic": "Deep Theories & Speculation",
+      "description": "A lot of my current curiosity goes into discussing deep theories with a friend — proposing ideas, trying to break them, rebuilding them, and seeing where the reasoning leads. The discussions range across physics, space, consciousness, and other fundamental questions.",
+      "resources": [],
+      "startedDate": "2026",
       "status": "active"
     },
     {
-      "id": "exp-2",
-      "topic": "TODO: Topic Name",
-      "description": "TODO: What you're learning and why.",
-      "resources": [
-        { "title": "TODO: Resource Name", "url": "https://TODO", "type": "course" }
-      ],
-      "startedDate": "2025-03",
-      "status": "active"
+      "id": "exp-aiml",
+      "topic": "Artificial Intelligence & Machine Learning",
+      "description": "I've been learning the fundamentals of AI and machine learning through MIT coursework, including basic concepts such as linear regression and working with data.",
+      "resources": [],
+      "startedDate": "2026",
+      "status": "learning"
+    },
+    {
+      "id": "exp-physics",
+      "topic": "Physics",
+      "description": "Currently studying physics at the JEE level, building a stronger foundation in mechanics, electromagnetism, modern physics, and the mathematical tools used to describe physical systems.",
+      "resources": [],
+      "startedDate": "2024",
+      "status": "studying"
+    },
+    {
+      "id": "exp-psychology",
+      "topic": "Psychology & Human Behavior",
+      "description": "I regularly read about psychology, cognition, behavior, decision-making, and the ways people perceive and respond to the world around them.",
+      "resources": [],
+      "startedDate": "2024",
+      "status": "reading"
+    },
+    {
+      "id": "exp-space",
+      "topic": "Space & Astronomy",
+      "description": "A recurring rabbit hole, especially when discussing fundamental questions about the universe. I read about astronomy and space and often connect those ideas back to the deeper theories I discuss with my friend.",
+      "resources": [],
+      "startedDate": "2024",
+      "status": "exploring"
+    },
+    {
+      "id": "exp-ocean",
+      "topic": "The Deep Sea",
+      "description": "I occasionally read about the deep ocean, its extreme environments, unusual organisms, and the parts of our planet that remain poorly understood.",
+      "resources": [],
+      "startedDate": "~2020",
+      "status": "exploring"
     }
   ],
-  "lastUpdated": "2025-06-15"
+  "lastUpdated": "2026-08-08"
 }
