@@ -1,23 +1,23 @@
 {
-  "intro": "This is where half-formed ideas live. Experiments, research notes, speculative projects, and questions I haven't answered yet.",
+  "intro": "This is where half-formed ideas live. Experiments, research notes, and questions I haven't answered yet.",
   "sections": [
     {
       "title": "Experiments",
       "items": [
         {
-          "title": "TODO: Experiment Name",
-          "description": "TODO: What you're testing or exploring.",
-          "status": "exploring"
-        }
-      ]
-    },
-    {
-      "title": "Future Ideas",
-      "items": [
+          "title": "MechLang",
+          "description": "A domain-specific language for representing and rendering organic reaction mechanisms. Currently refining the parser, molecular representation, rendering system, and mechanism syntax.",
+          "status": "building"
+        },
         {
-          "title": "TODO: Idea Name",
-          "description": "TODO: What this could become.",
-          "status": "idea"
+          "title": "Attention Drift Detection",
+          "description": "Exploring whether observable reading behavior such as scrolling, pauses, backtracking, and tab switching can provide a useful estimate of attention drift without collecting sensitive data.",
+          "status": "experimenting"
+        },
+        {
+          "title": "Scattering-Theory Reconstruction",
+          "description": "Reconstructing the mathematical path from long-range polarization potentials to low-energy scattering behavior while comparing the derivation with established literature.",
+          "status": "researching"
         }
       ]
     },
@@ -25,9 +25,14 @@
       "title": "Research Notes",
       "items": [
         {
-          "title": "TODO: Research Topic",
-          "description": "TODO: Key insight or open question.",
-          "status": "researching"
+          "title": "Argon–Krypton Electron Gain Enthalpy",
+          "description": "Tracing the origin and physical meaning of the apparently identical textbook values for argon and krypton, including historical electron-affinity measurements and scattering-theory interpretations.",
+          "status": "active research"
+        },
+        {
+          "title": "AI and Scientific Discovery",
+          "description": "Exploring whether computational systems can help discover useful mathematical structure or physical hypotheses rather than simply predict known outcomes.",
+          "status": "exploring"
         }
       ]
     },
@@ -35,8 +40,13 @@
       "title": "What If?",
       "items": [
         {
-          "title": "TODO: Speculative Question",
-          "description": "TODO: Why this question is interesting.",
+          "title": "Can a machine discover physics?",
+          "description": "If a system is given observations and enough structural constraints, how much of a physical theory could it rediscover without being explicitly given the governing equations?",
+          "status": "wondering"
+        },
+        {
+          "title": "What makes a question worth researching?",
+          "description": "How do you distinguish a question that merely sounds interesting from one that can actually produce new understanding?",
           "status": "wondering"
         }
       ]
@@ -45,8 +55,13 @@
       "title": "Reading Backlog",
       "items": [
         {
-          "title": "TODO: Paper/Book Title",
-          "description": "TODO: Why it's on the list.",
+          "title": "Quantum scattering and low-energy physics",
+          "description": "Primary literature and theoretical treatments relevant to the argon–krypton investigation.",
+          "status": "queued"
+        },
+        {
+          "title": "Scientific machine learning and symbolic regression",
+          "description": "Papers and resources on using computational methods to discover structure in scientific data.",
           "status": "queued"
         }
       ]
