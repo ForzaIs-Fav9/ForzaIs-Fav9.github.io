@@ -13,6 +13,15 @@
         "mathematical-notes",
         "overview"
       ],
+      "researchNotes": [
+        {
+          "slug": "rn-001",
+          "title": "RN-001 — Jost–Volterra Integral Equation for the r⁻⁴ Polarization Potential",
+          "date": "August 2026",
+          "version": "Version 1.0",
+          "summary": "An elementary derivation of the zero-energy Jost–Volterra integral equation for the attractive r⁻⁴ polarization potential."
+        }
+      ],
       "logEntries": [
         {
           "slug": "000-the-question",
