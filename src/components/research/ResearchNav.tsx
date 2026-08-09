@@ -8,10 +8,18 @@ const PAGE_LABELS: Record<string, string> = {
   "current-status": "Current Status",
   literature: "Literature",
   "mathematical-notes": "Mathematical Notes",
+  "rn-001": "RN-001",
   timeline: "Timeline",
 };
 
-const PAGE_ORDER = ["overview", "current-status", "literature", "mathematical-notes", "timeline"];
+const PAGE_ORDER = [
+  "overview",
+  "current-status",
+  "literature",
+  "mathematical-notes",
+  "rn-001",
+  "timeline",
+];
 
 interface ResearchNavProps {
   projectId: string;
@@ -19,27 +27,37 @@ interface ResearchNavProps {
   logCount: number;
 }
 
-export function ResearchNav({ projectId, pages, logCount }: ResearchNavProps) {
+export function ResearchNav({
+  projectId,
+  pages,
+  logCount,
+}: ResearchNavProps) {
   const pathname = usePathname();
   const base = `/research/${projectId}`;
 
   const ordered = PAGE_ORDER.filter((p) => pages.includes(p));
+
   const extra = pages
     .filter((p) => !PAGE_ORDER.includes(p))
     .sort();
+
   const sortedPages = [...ordered, ...extra];
 
   const navItems = [
-    ...sortedPages
-      .map((p) => ({
-        href: p === "overview" ? base : `${base}/${p}`,
-        label: PAGE_LABELS[p] || p.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
-      })),
-    { href: `${base}/log`, label: `Research Log (${logCount})` },
+    ...sortedPages.map((p) => ({
+      href: p === "overview" ? base : `${base}/${p}`,
+      label:
+        PAGE_LABELS[p] ||
+        p.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
+    })),
+    {
+      href: `${base}/log`,
+      label: `Research Log (${logCount})`,
+    },
   ];
 
   return (
-    <nav className="flex flex-wrap gap-2 border-b border-border pb-4">
+    <nav className="flex flex-wrap items-center gap-1.5">
       {navItems.map((item) => {
         const isActive =
           pathname === item.href ||
