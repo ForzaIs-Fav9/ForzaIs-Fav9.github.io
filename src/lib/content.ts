@@ -161,21 +161,53 @@ export type LabData = {
   sections: LabSection[];
 };
 
-export const personal = personalData as unknown as PersonalData;
-export const achievements = achievementsData.achievements as unknown as Achievement[];
-export const projects = projectsData.projects as unknown as Project[];
-export const articles = writingData.articles as unknown as Article[];
-export const milestones = timelineData.milestones as unknown as Milestone[];
-export const futureMilestones = (timelineData as unknown as { futureMilestones: FutureMilestone[] }).futureMilestones;
-export const exploringTopics = exploringData.currentInterests as unknown as ExploringTopic[];
-export const exploringLastUpdated = exploringData.lastUpdated;
-export const navLinks = navigationData.links as unknown as NavLink[];
-export const favoriteBooks = booksData.favorites as unknown as Book[];
-export const currentlyReading = booksData.currentlyReading as unknown as CurrentlyReading[];
-export const ideas = ideasData.ideas as unknown as Idea[];
-export const quotes = quotesData.quotes as unknown as Quote[];
-export const nowPage = nowData as unknown as NowData;
-export const labPage = labData as unknown as LabData;
+export const personal =
+  personalData as unknown as PersonalData;
+
+export const achievements =
+  achievementsData.achievements as unknown as Achievement[];
+
+export const projects =
+  projectsData.projects as unknown as Project[];
+
+export const articles =
+  writingData.articles as unknown as Article[];
+
+export const milestones =
+  timelineData.milestones as unknown as Milestone[];
+
+export const futureMilestones = (
+  timelineData as unknown as {
+    futureMilestones: FutureMilestone[];
+  }
+).futureMilestones;
+
+export const exploringTopics =
+  exploringData.currentInterests as unknown as ExploringTopic[];
+
+export const exploringLastUpdated =
+  exploringData.lastUpdated;
+
+export const navLinks =
+  navigationData.links as unknown as NavLink[];
+
+export const favoriteBooks =
+  booksData.favorites as unknown as Book[];
+
+export const currentlyReading =
+  booksData.currentlyReading as unknown as CurrentlyReading[];
+
+export const ideas =
+  ideasData.ideas as unknown as Idea[];
+
+export const quotes =
+  quotesData.quotes as unknown as Quote[];
+
+export const nowPage =
+  nowData as unknown as NowData;
+
+export const labPage =
+  labData as unknown as LabData;
 
 export type EasterEgg = {
   id: string;
@@ -184,13 +216,22 @@ export type EasterEgg = {
   reward: string;
 };
 
-export const easterEggs = easterEggsData.eggs as unknown as EasterEgg[];
+export const easterEggs =
+  easterEggsData.eggs as unknown as EasterEgg[];
 
 export type ResearchLogEntry = {
   slug: string;
   title: string;
   date: string;
   phase: string;
+  summary: string;
+};
+
+export type ResearchNote = {
+  slug: string;
+  title: string;
+  date: string;
+  version: string;
   summary: string;
 };
 
@@ -202,7 +243,9 @@ export type ResearchProject = {
   field: string;
   summary: string;
   pages: string[];
+  researchNotes: ResearchNote[];
   logEntries: ResearchLogEntry[];
 };
 
-export const researchProjects = researchData.projects as unknown as ResearchProject[];
+export const researchProjects =
+  researchData.projects as unknown as ResearchProject[];

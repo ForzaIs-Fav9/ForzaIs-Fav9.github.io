@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { researchProjects } from "@/lib/content";
 
 const PAGE_LABELS: Record<string, string> = {
   overview: "Overview",
   "current-status": "Current Status",
   literature: "Literature",
   "mathematical-notes": "Mathematical Notes",
-  "rn-001": "RN-001",
   timeline: "Timeline",
 };
 
@@ -17,7 +17,6 @@ const PAGE_ORDER = [
   "current-status",
   "literature",
   "mathematical-notes",
-  "rn-001",
   "timeline",
 ];
 
@@ -35,7 +34,13 @@ export function ResearchNav({
   const pathname = usePathname();
   const base = `/research/${projectId}`;
 
-  const ordered = PAGE_ORDER.filter((p) => pages.includes(p));
+  const project = researchProjects.find(
+    (p) => p.id === projectId
+  );
+
+  const ordered = PAGE_ORDER.filter((p) =>
+    pages.includes(p)
+  );
 
   const extra = pages
     .filter((p) => !PAGE_ORDER.includes(p))
@@ -45,11 +50,24 @@ export function ResearchNav({
 
   const navItems = [
     ...sortedPages.map((p) => ({
-      href: p === "overview" ? base : `${base}/${p}`,
+      href:
+        p === "overview"
+          ? base
+          : `${base}/${p}`,
       label:
         PAGE_LABELS[p] ||
-        p.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
+        p
+          .replace(/-/g, " ")
+          .replace(/\b\w/g, (c) => c.toUpperCase()),
     })),
+    ...(project?.researchNotes?.length
+      ? [
+          {
+            href: `${base}/research-notes`,
+            label: `Research Notes (${project.researchNotes.length})`,
+          },
+        ]
+      : []),
     {
       href: `${base}/log`,
       label: `Research Log (${logCount})`,
@@ -61,7 +79,8 @@ export function ResearchNav({
       {navItems.map((item) => {
         const isActive =
           pathname === item.href ||
-          pathname === `${item.href}/`;
+          pathname === `${item.href}/` ||
+          pathname.startsWith(`${item.href}/`);
 
         return (
           <Link
