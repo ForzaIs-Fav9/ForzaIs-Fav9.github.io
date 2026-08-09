@@ -78,9 +78,9 @@ export function ResearchNav({
     <nav className="flex flex-wrap items-center gap-1.5">
       {navItems.map((item) => {
         const isActive =
-          pathname === item.href ||
-          pathname === `${item.href}/` ||
-          pathname.startsWith(`${item.href}/`);
+			pathname === item.href ||
+			(item.href !== base &&
+			pathname.startsWith(`${item.href}/`));
 
         return (
           <Link

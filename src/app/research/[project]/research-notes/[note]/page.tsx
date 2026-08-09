@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { createMetadata } from "@/lib/metadata";
 import { Container } from "@/components/layout/Container";
 import { PageWrapper } from "@/components/layout/PageWrapper";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ResearchNav } from "@/components/research/ResearchNav";
 import { researchProjects } from "@/lib/content";
 import { getResearchNote } from "@/lib/research";
@@ -76,22 +75,44 @@ export default async function ResearchNotePage({
 
   if (!noteData) notFound();
 
+  const date = noteData.frontmatter.date as
+    | string
+    | undefined;
+
+  const version = noteData.frontmatter.version as
+    | string
+    | undefined;
+
   return (
     <Container className="py-24">
       <PageWrapper>
-        <SectionHeading
-          title={proj.title}
-          subtitle="Research Notes"
-        />
-
         <ResearchNav
           projectId={project}
           pages={proj.pages}
           logCount={proj.logEntries.length}
         />
 
-        <article className="prose-journal mt-8">
+        <article className="mt-10">
+          <header className="border-b border-border pb-5">
+            <p className="text-sm font-medium text-accent">
+              {noteData.slug.toUpperCase()}
+            </p>
+
+            <h1 className="mt-3 font-serif text-3xl font-semibold leading-tight text-text-primary md:text-4xl">
+              {noteData.title}
+            </h1>
+
+            {(version || date) && (
+              <p className="mt-3 text-sm text-text-secondary">
+                {[version, date]
+                  .filter(Boolean)
+                  .join(" · ")}
+              </p>
+            )}
+          </header>
+
           <div
+            className="prose-journal mt-8"
             dangerouslySetInnerHTML={{
               __html: noteData.content,
             }}
