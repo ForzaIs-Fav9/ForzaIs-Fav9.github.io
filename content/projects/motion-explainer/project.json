@@ -1,0 +1,22 @@
+{
+  "id": "motion-explainer",
+  "title": "Motion Explainer",
+  "description": "An individual skill I developed within my fork of Anthropic's Skills repository. It creates animated, step-by-step visual explanations of concepts using p5.js, with support for interactive prediction, parameter sliders, misconception scenes, mathematical notation, and 2D/3D visualizations.",
+  "longDescription": "Motion Explainer is a reusable skill for turning concepts into animated visual narratives. It structures an explanation around a clear conceptual arc, then builds it as a sequence of scenes using a fixed viewer template. The skill supports p5.js animation, KaTeX-rendered mathematics, interactive prediction pauses, misconception scenes, parameter controls, responsive 2D or WEBGL rendering, and reusable animation and drawing primitives. The implementation lives specifically in the motion-explainer directory of my fork of Anthropic's Skills repository. The other skills in that fork are upstream Anthropic work and are not part of this project.",
+  "technologies": [
+    "p5.js",
+    "JavaScript",
+    "HTML",
+    "KaTeX",
+    "CSS"
+  ],
+  "category": "developer-tools",
+  "status": "active",
+  "links": {
+    "github": "https://github.com/harshithvankela/skills/tree/main/skills/motion-explainer"
+  },
+  "featured": false,
+  "image": "",
+  "date": "2026",
+  "hasPage": false
+}
