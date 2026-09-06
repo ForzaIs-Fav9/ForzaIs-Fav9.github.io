@@ -1,6 +1,26 @@
 {
   "projects": [
     {
+      "id": "chempath",
+      "title": "ChemPath",
+      "description": "A computational chemistry project that models organic reaction pathways as directed weighted graphs and explores shortest-path algorithms for navigating synthesis networks.",
+      "longDescription": "ChemPath is an independent computational chemistry project exploring whether organic synthesis pathways can be represented as directed weighted graphs and navigated using graph-theoretic algorithms. The current prototype implements a C++ reaction graph engine and Dijkstra's shortest-path algorithm, with future work planned around chemically informed heuristics, alternative pathfinding methods, and integration with MechLang for visualization.",
+      "technologies": [
+        "C++",
+        "Graph Algorithms",
+        "Dijkstra's Algorithm"
+      ],
+      "category": "computational-chemistry",
+      "status": "in-progress",
+      "links": {
+        "github": "https://github.com/harshithvankela/chempath"
+      },
+      "featured": false,
+      "image": "",
+      "date": "2026",
+      "hasPage": false
+    },
+    {
       "id": "motion-explainer",
       "title": "Motion Explainer",
       "description": "An individual skill I developed within my fork of Anthropic's Skills repository. It creates animated, step-by-step visual explanations of concepts using p5.js, with support for interactive prediction, parameter sliders, misconception scenes, mathematical notation, and 2D/3D visualizations.",
