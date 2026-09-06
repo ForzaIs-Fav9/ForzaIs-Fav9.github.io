@@ -1,48 +1,45 @@
 {
-  "lastUpdated": "2026-08-08",
+  "lastUpdated": "2026-09-06",
   "location": "Bengaluru, India",
-  "focus": "Finishing Grade 12 while building, researching, and following questions that genuinely interest me.",
+  "focus": "Focusing on JEE — building a strong foundation in mathematics, physics, and chemistry and preparing seriously for the examinations.",
+
   "sections": [
     {
       "title": "Right Now",
       "items": [
-        "Finishing Grade 12 and strengthening my foundations in mathematics, physics, chemistry, and computer science.",
-        "Preparing seriously for competitive examinations while trying to become better at solving unfamiliar problems rather than just completing more questions.",
-        "Building a habit of turning curiosity into experiments, projects, and actual research."
+        "Focusing primarily on JEE preparation.",
+        "Strengthening my understanding of mathematics, physics, and chemistry rather than relying on memorization or pattern recognition.",
+        "Working toward being able to solve unfamiliar and difficult problems independently.",
+        "Balancing preparation with school and maintaining consistency over the long term."
       ]
     },
+
     {
-      "title": "Building",
+      "title": "Studying",
       "items": [
-        "MechLang — a domain-specific language for representing and rendering organic reaction mechanisms.",
-        "FocusVector — a privacy-conscious browser extension exploring whether observable reading behavior can be used to estimate attention drift.",
-        "This website — an evolving record of my projects, research, writing, experiments, and ideas."
+        "Mathematics — developing stronger problem-solving ability and mathematical intuition.",
+        "Physics — building a rigorous understanding of concepts and applying them to unfamiliar problems.",
+        "Chemistry — strengthening both conceptual understanding and problem-solving across physical, organic, and inorganic chemistry.",
+        "Computer Science — continuing to program and build things when time allows."
       ]
     },
+
     {
-      "title": "Research",
+      "title": "Outside JEE",
       "items": [
-        "Investigating why chemistry textbooks report apparently identical electron gain enthalpies for argon and krypton.",
-        "Tracing the historical origin of the reported values through primary literature.",
-        "Using scattering theory to investigate whether there is a deeper physical explanation behind the observation."
+        "Continuing the Argon–Krypton electron gain enthalpy investigation when I have time.",
+        "Maintaining and improving projects such as MechLang, ChemPath, and FocusVector.",
+        "Reading and exploring questions in physics, AI, psychology, space, and other areas that interest me."
       ]
     },
+
     {
-      "title": "Learning",
+      "title": "Approach",
       "items": [
-        "Artificial intelligence and machine learning",
-        "Quantum computing and quantum information",
-        "Mathematics, physics, and computational methods",
-        "Programming and software engineering"
-      ]
-    },
-    {
-      "title": "Thinking About",
-      "items": [
-        "How to tell whether a research question is genuinely open or simply unfamiliar.",
-        "How computational tools can help investigate scientific questions without replacing physical reasoning.",
-        "Why seemingly simple observations sometimes hide surprisingly deep explanations.",
-        "How to turn curiosity into disciplined, reproducible work."
+        "Prioritizing depth of understanding over simply increasing the number of questions solved.",
+        "Keeping track of mistakes and using them to identify weaknesses in my understanding and problem-solving.",
+        "Trying to become comfortable with unfamiliar problems instead of depending on familiar solution patterns.",
+        "Keeping long-term research and projects secondary to the current academic priority."
       ]
     }
   ]
