@@ -21,6 +21,27 @@
       "hasPage": false
     },
     {
+      "id": "focusvector",
+      "title": "FocusVector",
+      "description": "A privacy-conscious Chrome extension that estimates possible attention drift during digital reading from observable interaction patterns.",
+      "longDescription": "FocusVector is an experimental browser-based behavioral telemetry system for estimating possible continuity loss during digital reading sessions. It collects lightweight interaction signals such as scrolling behavior, rereading, pauses, reading progression, and tab switching, extracts behavioral features, and applies local heuristics to classify reading states such as focused, fragmented, possible drift, and drift recovery. The project is designed around measurable behavioral signals rather than diagnostic or psychological claims, with an emphasis on privacy and non-intrusive interventions.",
+      "technologies": [
+        "JavaScript",
+        "Chrome Extension",
+        "Manifest V3",
+        "Behavioral Analysis"
+      ],
+      "category": "human-computer-interaction",
+      "status": "in-progress",
+      "links": {
+        "github": "https://github.com/harshithvankela/FocusVector"
+      },
+      "featured": false,
+      "image": "",
+      "date": "2026",
+      "hasPage": false
+    },
+    {
       "id": "motion-explainer",
       "title": "Motion Explainer",
       "description": "An individual skill I developed within my fork of Anthropic's Skills repository. It creates animated, step-by-step visual explanations of concepts using p5.js, with support for interactive prediction, parameter sliders, misconception scenes, mathematical notation, and 2D/3D visualizations.",
