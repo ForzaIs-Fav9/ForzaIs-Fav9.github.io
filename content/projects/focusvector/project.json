@@ -1,0 +1,21 @@
+{
+  "id": "focusvector",
+  "title": "FocusVector",
+  "description": "A privacy-conscious Chrome extension that estimates possible attention drift during digital reading from observable interaction patterns.",
+  "longDescription": "FocusVector is an experimental browser-based behavioral telemetry system for estimating possible continuity loss during digital reading sessions. It collects lightweight interaction signals such as scrolling behavior, rereading, pauses, reading progression, and tab switching, extracts behavioral features, and applies local heuristics to classify reading states such as focused, fragmented, possible drift, and drift recovery. The project is designed around measurable behavioral signals rather than diagnostic or psychological claims, with an emphasis on privacy and non-intrusive interventions.",
+  "technologies": [
+    "JavaScript",
+    "Chrome Extension",
+    "Manifest V3",
+    "Behavioral Analysis"
+  ],
+  "category": "human-computer-interaction",
+  "status": "in-progress",
+  "links": {
+    "github": "https://github.com/harshithvankela/FocusVector"
+  },
+  "featured": false,
+  "image": "",
+  "date": "2026",
+  "hasPage": false
+}
